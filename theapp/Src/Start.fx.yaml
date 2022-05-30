@@ -1,5 +1,4 @@
 Start As screen:
-
     "TaskList As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         Height: =966
         Items: =HackathonSc1Tasks
@@ -192,7 +191,7 @@ Start As screen:
         Height: =42
         OnSelect: =Set(addTask, "yes")
         Size: =24
-        Text: ="Add Task"
+        Text: ="Add Task New"
         Visible: =If(addTask = "yes", false, true) && If(showImage = "yes", false, true)
         Width: =205
         X: =428
@@ -901,4 +900,3 @@ Start As screen:
             X: =556
             Y: =106
             ZIndex: =20
-
