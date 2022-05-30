@@ -194,8 +194,8 @@ Start As screen:
         Size: =24
         Text: ="Add Task New"
         Visible: =If(addTask = "yes", false, true) && If(showImage = "yes", false, true)
-        Width: =205
-        X: =428
+        Width: =245
+        X: =388
         Y: =99
         ZIndex: =19
 
