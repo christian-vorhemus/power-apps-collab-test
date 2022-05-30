@@ -129,7 +129,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "05/30/2022 12:36:17",
+  "HeaderLastSavedDateTimeUTC": "05/30/2022 13:44:36",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "3b1e2add-3337-498e-a5bf-a04aedf9c8b1": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/4e3e283101fe4485acccb22caafc0f84\"",
@@ -142,8 +142,8 @@
     "MS-PowerPlatform_logo_stacked_c-white_rgb": "30a87e95-99da-4bae-814a-dff466c7bf61.png"
   },
   "LocalResourceRootPaths": {
-    "MS-PowerPlatform_logo_stacked_c-gray_rgb": "https://docserverpwaprodweu.blob.core.windows.net/91fdef50-d6bb-4e2a-a7d6-23e1876f56dc-1/resource/Assets0Images02289c30d-32f7-40dc-91b6-4e83ce8f32b6.png?sv=2017-04-17&sr=b&sig=aZBWSyzKaO0S2KowB4ly75LvHuwPGrYEjqjnPK6dPsM%3D&spr=https&se=2022-05-31T11%3A56%3A08Z&sp=r",
-    "MS-PowerPlatform_logo_stacked_c-white_rgb": "https://docserverpwaprodweu.blob.core.windows.net/91fdef50-d6bb-4e2a-a7d6-23e1876f56dc-1/resource/Assets0Images030a87e95-99da-4bae-814a-dff466c7bf61.png?sv=2017-04-17&sr=b&sig=tFqNbIQ65o69oEVNJI5Vli6FfG%2BEhIO9zdCNRaeSGbg%3D&spr=https&se=2022-05-31T11%3A56%3A08Z&sp=r"
+    "MS-PowerPlatform_logo_stacked_c-gray_rgb": "https://docserverpwaprodweu.blob.core.windows.net/07c7a6ad-8bde-42f3-9109-92f75a01a56f-1/resource/Assets0Images02289c30d-32f7-40dc-91b6-4e83ce8f32b6.png?sv=2017-04-17&sr=b&sig=bg7LEjXhcIR%2BMx4PaPR%2FKgIXawYyRi3qG9EYeLOn0jA%3D&spr=https&se=2022-05-31T13%3A21%3A53Z&sp=r",
+    "MS-PowerPlatform_logo_stacked_c-white_rgb": "https://docserverpwaprodweu.blob.core.windows.net/07c7a6ad-8bde-42f3-9109-92f75a01a56f-1/resource/Assets0Images030a87e95-99da-4bae-814a-dff466c7bf61.png?sv=2017-04-17&sr=b&sig=lkxbhi1STPyV9lAyigNevhcoPl%2FWrvfGOfcVqd5TvW0%3D&spr=https&se=2022-05-31T13%3A21%3A53Z&sp=r"
   },
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
@@ -336,7 +336,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 1.192503,
+    "AnalysisLoadTime": 1.1138597,
     "ControlCount": {
       "addMedia": 2,
       "attachments": 1,
@@ -355,7 +355,7 @@
       "text": 14,
       "typedDataCard": 15
     },
-    "DeserializationLoadTime": 1.7784741,
+    "DeserializationLoadTime": 2.9759459,
     "ErrorCount": 3
   },
   "WasLocalDatabaseReferencesEmpty": false
