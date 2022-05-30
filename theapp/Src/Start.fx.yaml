@@ -1,0 +1,904 @@
+Start As screen:
+
+    "TaskList As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Height: =966
+        Items: =HackathonSc1Tasks
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =270
+        Y: =170
+        ZIndex: =12
+
+        Task As label:
+            FontWeight: =FontWeight.Normal
+            Height: =36
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.'Task Name'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =463
+            X: =TaskLabel.X+90
+            Y: =TaskLabel.Y
+            ZIndex: =2
+
+        Separator2 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+        Asset As label:
+            Height: =36
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: =ThisItem.Asset
+            Width: =463
+            X: =Task.X
+            Y: =Role.Y+36
+            ZIndex: =6
+
+        Role As label:
+            Height: =36
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: =ThisItem.Role
+            Width: =463
+            X: =Task.X
+            Y: =Task.Y+36
+            ZIndex: =7
+
+        Shift As label:
+            Height: =36
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: =ThisItem.Shift
+            Width: =463
+            X: =Asset.X
+            Y: =Asset.Y+36
+            ZIndex: =8
+
+        Context As label:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Dotted
+            Height: =103
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: |
+                =ThisItem.ContextImage
+            VerticalAlign: =VerticalAlign.Top
+            Width: =358
+            X: =136
+            Y: =153
+            ZIndex: =9
+
+        TaskLabel As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =36
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: |-
+                ="Task:"
+            Width: =80
+            X: =12
+            Y: =9
+            ZIndex: =10
+
+        RoleLabel As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =36
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: |-
+                ="Role:"
+            Width: =80
+            X: =TaskLabel.X
+            Y: =TaskLabel.Y+36
+            ZIndex: =11
+
+        AssetLabel As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =36
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: |-
+                ="Asset:"
+            Width: =91
+            X: =RoleLabel.X
+            Y: =RoleLabel.Y+36
+            ZIndex: =12
+
+        ShiftLabel As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =36
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: |-
+                ="Shift:"
+            Width: =91
+            X: =RoleLabel.X
+            Y: =AssetLabel.Y+36
+            ZIndex: =13
+
+        ContextLabel As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =36
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: |-
+                ="Context:"
+            Width: =124
+            X: =RoleLabel.X
+            Y: =ShiftLabel.Y+36
+            ZIndex: =14
+
+        Icon3 As icon.PhotosPictures:
+            Height: =45
+            Icon: =Icon.PhotosPictures
+            OnSelect: =Set(showImage, "yes")
+            Width: =45
+            X: =Task.X+470
+            Y: =20
+            ZIndex: =15
+
+        Button4 As button:
+            Height: =31
+            OnSelect: |-
+                =Navigate(ChangeExistingTask, ScreenTransition.Fade,{selectedItemFromStartScreen: TaskList.Selected})
+            Text: ="Edit"
+            Width: =56
+            X: =572
+            Y: =225
+            ZIndex: =16
+
+    ImageGroup As group:
+        Height: =5
+        Width: =5
+        X: =80
+        Y: =80
+        ZIndex: =18
+
+        TaskImage As image:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =1044
+            Image: =TaskList.Selected.Image
+            Visible: =If(showImage = "yes", true, false)
+            Width: =640
+            Y: =90
+            ZIndex: =13
+
+        Label3 As label:
+            Height: =1044
+            Size: =21
+            Text: =
+            Visible: =If(showImage = "yes", true, false)
+            Width: =640
+            Y: =90
+            ZIndex: =17
+
+        Icon4 As icon.CancelBadge:
+            Icon: =Icon.CancelBadge
+            OnSelect: =Set(showImage, "no")
+            Visible: =If(showImage = "yes", true, false)
+            X: =556
+            Y: =106
+            ZIndex: =18
+
+    AddTaskButton As button:
+        Fill: =RGBA(141, 198, 63, 1)
+        Height: =42
+        OnSelect: =Set(addTask, "yes")
+        Size: =24
+        Text: ="Add Task"
+        Visible: =If(addTask = "yes", false, true) && If(showImage = "yes", false, true)
+        Width: =205
+        X: =428
+        Y: =99
+        ZIndex: =19
+
+    potentialdeleteaddtask As group:
+        Height: =5
+        Width: =5
+        X: =80
+        Y: =80
+        ZIndex: =19
+
+        AddTaskBackground As label:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =901
+            Size: =21
+            Text: =""
+            Visible: =false
+            Width: =560
+            X: =40
+            Y: =161
+            ZIndex: =1
+
+        TaskName As text:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            Default: ="Text input"
+            Height: =46
+            Size: =21
+            Visible: =false
+            Width: =520
+            X: =60
+            Y: =237
+            ZIndex: =2
+
+        Dropdown1 As dropdown:
+            Height: =46
+            Items: =HackathonSc1Tasks
+            Size: =21
+            Visible: =false
+            Width: =520
+            X: =60
+            Y: =310
+            ZIndex: =3
+
+        TextInput2 As text:
+            Default: ="4"
+            Format: =TextFormat.Number
+            Height: =46
+            Size: =21
+            Visible: =false
+            Width: =520
+            X: =60
+            Y: =423
+            ZIndex: =4
+
+        Label4 As label:
+            Height: =36
+            Size: =21
+            Text: |-
+                ="Shift Number:"
+            Visible: =false
+            Width: =520
+            X: =60
+            Y: =371
+            ZIndex: =5
+
+        TextInput3 As text:
+            Default: ="Text input"
+            Height: =46
+            Size: =21
+            Visible: =false
+            Width: =520
+            X: =60
+            Y: =502
+            ZIndex: =6
+
+        TextInput4 As text:
+            Default: ="Text input"
+            Height: =46
+            Size: =21
+            Visible: =false
+            Width: =520
+            X: =60
+            Y: =577
+            ZIndex: =7
+
+        Icon1 As icon.Add:
+            Fill: =RGBA(255, 255, 255, 1)
+            Icon: =Icon.Add
+            Visible: =false
+            X: =364
+            Y: =658
+            ZIndex: =8
+
+        Button2 As button:
+            Height: =50
+            Size: =24
+            Text: ="Upload Image"
+            Visible: =false
+            Width: =280
+            X: =60
+            Y: =665
+            ZIndex: =9
+
+        Button3 As button:
+            Height: =58
+            Size: =24
+            Text: ="Ad"
+            Visible: =false
+            Width: =136
+            X: =252
+            Y: =987
+            ZIndex: =10
+
+        Icon5 As icon.CancelBadge:
+            Height: =50
+            Icon: =Icon.CancelBadge
+            OnSelect: =Set(addTask, "no")
+            Visible: =false
+            Width: =50
+            X: =530
+            Y: =175
+            ZIndex: =11
+
+    Header As label:
+        Align: =Align.Center
+        Fill: =RGBA(204, 204, 204, 1)
+        Font: =Font.'Segoe UI'
+        Height: =90
+        Size: =40
+        Text: =""
+        Width: =640
+        ZIndex: =21
+
+    Logo As image:
+        Height: =74
+        Image: ='MS-PowerPlatform_logo_stacked_c-white_rgb'
+        Width: =390
+        X: =Header.X
+        Y: =Header.Y+10
+        ZIndex: =22
+
+    Label1 As label:
+        Height: =70
+        Size: =21
+        Text: |-
+            ="form mode: " & NewTaskForm.Mode & "    displaymode:" & NewTaskForm.DisplayMode
+        Width: =428
+        Y: =95
+        ZIndex: =23
+
+    AddNewTask As group:
+        Height: =5
+        Width: =5
+        X: =80
+        Y: =80
+        ZIndex: =23
+
+        AddNewTaskBackgroundLabel As label:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =1044
+            Size: =21
+            Text: =""
+            Visible: =If(addTask = "yes", true, false)
+            Width: =640
+            Y: =90
+            ZIndex: =14
+
+        NewTaskForm As form:
+            DataSource: =HackathonSc1Tasks
+            DefaultMode: =FormMode.New
+            Height: =978
+            Visible: =If(addTask = "yes", true, false)
+            Width: =640
+            Y: =156
+            ZIndex: =15
+
+            Asset_DataCard1 As typedDataCard.textualEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="cr876_asset"
+                Default: =ThisItem.Asset
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@HackathonSc1Tasks],DataSourceInfo.DisplayName,"cr876_asset")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@HackathonSc1Tasks], DataSourceInfo.MaxLength, "cr876_asset")
+                Required: =false
+                Update: =DataCardValue3.Text
+                Width: =640
+                X: =0
+                Y: =1
+                ZIndex: =1
+
+                DataCardKey3 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue3 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =50
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Size: =21
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey3.Y + DataCardKey3.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage2 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =24
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue3.Y + DataCardValue3.Height
+                    ZIndex: =3
+
+                StarVisible2 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey3.Height
+                    Size: =21
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey3.Y
+                    ZIndex: =4
+
+            ContextImage_DataCard1 As typedDataCard.textualEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="cr876_contextimage"
+                Default: =ThisItem.ContextImage
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@HackathonSc1Tasks],DataSourceInfo.DisplayName,"cr876_contextimage")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@HackathonSc1Tasks], DataSourceInfo.MaxLength, "cr876_contextimage")
+                Required: =false
+                Update: =DataCardValue4.Text
+                Width: =640
+                X: =0
+                Y: =2
+                ZIndex: =1
+
+                DataCardKey4 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue4 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =50
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Size: =21
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey4.Y + DataCardKey4.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage3 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =24
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue4.Y + DataCardValue4.Height
+                    ZIndex: =3
+
+                StarVisible3 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey4.Height
+                    Size: =21
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey4.Y
+                    ZIndex: =4
+
+            Image_DataCard1 As typedDataCard.addLargePictureCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="cr876_image"
+                Default: =ThisItem.Image
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@HackathonSc1Tasks],DataSourceInfo.DisplayName,"cr876_image")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =131
+                Required: =false
+                Update: =Image1.Image
+                Width: =640
+                X: =0
+                Y: =3
+                ZIndex: =1
+
+                DataCardKey5 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                Image1 As image:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =AddPicture1.Height
+                    Image: =If(IsBlank(AddPicture1.Media), Parent.Default, AddPicture1.Media)
+                    Tooltip: =Parent.DisplayName
+                    Width: =AddPicture1.Width
+                    X: =AddPicture1.X
+                    Y: =AddPicture1.Y
+                    ZIndex: =2
+
+                AddPicture1 As addMedia:
+                    BorderStyle: =BorderStyle.Dotted
+                    BorderThickness: =0.5
+                    Height: =53
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey5.Y + DataCardKey5.Height + 5
+                    ZIndex: =3
+
+                ErrorMessage4 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =24
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =Image1.Y + Image1.Height
+                    ZIndex: =4
+
+                StarVisible4 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey5.Height
+                    Size: =21
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey5.Y
+                    ZIndex: =5
+
+            Role_DataCard1 As typedDataCard.comboBoxOptionSetSingleEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="cr876_role"
+                Default: =ThisItem.Role
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@HackathonSc1Tasks],DataSourceInfo.DisplayName,"cr876_role")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =DataCardValue5.Selected.Value
+                Width: =640
+                X: =0
+                Y: =4
+                ZIndex: =1
+
+                DataCardKey6 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue5 As combobox:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    DefaultSelectedItems: =[Parent.Default]
+                    DisplayFields: =["Value"]
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =50
+                    IsSearchable: =false
+                    Items: =Choices(Roles)
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    SearchFields: =["Value"]
+                    SearchItems: =[]
+                    SelectMultiple: =false
+                    Size: =21
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey6.Y + DataCardKey6.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage5 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =24
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue5.Y + DataCardValue5.Height
+                    ZIndex: =3
+
+                StarVisible5 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey6.Height
+                    Size: =21
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey6.Y
+                    ZIndex: =4
+
+            Shift_DataCard1 As typedDataCard.numberEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="cr876_shift"
+                Default: =ThisItem.Shift
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@HackathonSc1Tasks],DataSourceInfo.DisplayName,"cr876_shift")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =Value(DataCardValue6.Text)
+                Width: =640
+                X: =0
+                Y: =5
+                ZIndex: =1
+
+                DataCardKey7 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue6 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    Format: =TextFormat.Number
+                    Height: =50
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Size: =21
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey7.Y + DataCardKey7.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage6 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =24
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue6.Y + DataCardValue6.Height
+                    ZIndex: =3
+
+                StarVisible6 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey7.Height
+                    Size: =21
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey7.Y
+                    ZIndex: =4
+
+            AssignedPersonEmail_DataCard1 As typedDataCard.textualEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="cr876_assignedpersonemail"
+                Default: =ThisItem.AssignedPersonEmail
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@HackathonSc1Tasks],DataSourceInfo.DisplayName,"cr876_assignedpersonemail")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@HackathonSc1Tasks], DataSourceInfo.MaxLength, "cr876_assignedpersonemail")
+                Required: =true
+                Update: =DataCardValue2.Text
+                Width: =640
+                X: =0
+                Y: =6
+                ZIndex: =1
+
+                DataCardKey2 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue2 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =50
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Size: =21
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey2.Y + DataCardKey2.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage7 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =24
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue2.Y + DataCardValue2.Height
+                    ZIndex: =3
+
+                StarVisible7 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey2.Height
+                    Size: =21
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey2.Y
+                    ZIndex: =4
+
+            "'Task Name_DataCard1' As typedDataCard.textualEditCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="cr876_hacksc1task"
+                Default: =ThisItem.'Task Name'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@HackathonSc1Tasks],DataSourceInfo.DisplayName,"cr876_hacksc1task")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@HackathonSc1Tasks], DataSourceInfo.MaxLength, "cr876_hacksc1task")
+                Required: =true
+                Update: =DataCardValue1.Text
+                Width: =640
+                X: =0
+                Y: =0
+                ZIndex: =20
+
+                DataCardKey1 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue1 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =50
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Size: =21
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey1.Y + DataCardKey1.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage1 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =24
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue1.Y + DataCardValue1.Height
+                    ZIndex: =3
+
+                StarVisible1 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey1.Height
+                    Size: =21
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey1.Y
+                    ZIndex: =4
+
+        AddNewTaskButton As button:
+            Height: =49
+            OnSelect: |-
+                =SubmitForm(NewTaskForm); Set(lastSubmitFromForm, NewTaskForm.LastSubmit); 'InformTaskCreated'.Run("Handle Task: " & lastSubmitFromForm.'Task Name'); Set(addTask,"no"); 'InformTaskAssigned'.Run(lastSubmitFromForm.AssignedPersonEmail); NewForm(NewTaskForm)
+            Size: =24
+            Text: ="Add"
+            Visible: =If(addTask = "yes", true, false)
+            X: =240
+            Y: =1074
+            ZIndex: =16
+
+        Icon6 As icon.CancelBadge:
+            Icon: =Icon.CancelBadge
+            OnSelect: =Set(addTask, "no")
+            Visible: =If(addTask = "yes", true, false)
+            X: =556
+            Y: =106
+            ZIndex: =20
+

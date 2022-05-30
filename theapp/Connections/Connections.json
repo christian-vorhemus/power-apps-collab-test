@@ -1,0 +1,107 @@
+{
+  "3b1e2add-3337-498e-a5bf-a04aedf9c8b1": {
+    "connectionParameters": {
+      "sku": "Enterprise",
+      "workFlowCallbackUri": "https://prod-85.westeurope.logic.azure.com:443/workflows/914b3c645db544a4ad63b5248530e31a/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=nObqA-t6faznGRYZ6hWl79mXe_opnergSh1stuabZT8",
+      "workflowEndpoint": "/subscriptions/ce4eb7c9-9c8b-4133-9141-bac869f4b0a7/resourceGroups/72F988BF86F141AF91AB2D7CD011DB47-4F57268ECFFB409AADB3A1AC54B2130D/providers/Microsoft.Logic/workflows/693bbcef-f97e-49f7-b453-254f1b89b5a8",
+      "workflowName": "693bbcef-f97e-49f7-b453-254f1b89b5a8",
+      "workflowPath": "/subscriptions/ce4eb7c9-9c8b-4133-9141-bac869f4b0a7/resourceGroups/72F988BF86F141AF91AB2D7CD011DB47-4F57268ECFFB409AADB3A1AC54B2130D/providers/Microsoft.Logic/workflows/693bbcef-f97e-49f7-b453-254f1b89b5a8"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "bcc2d3fd-51c9-47a2-8db8-3030bdf44d46": {
+          "value": "shared_teams"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "693bbcef-f97e-49f7-b453-254f1b89b5a8"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_teams": {
+          "value": "bcc2d3fd-51c9-47a2-8db8-3030bdf44d46"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "693bbcef-f97e-49f7-b453-254f1b89b5a8"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "InformTaskAssigned"
+    ],
+    "dependencies": {
+      "shared_teams": "bcc2d3fd-51c9-47a2-8db8-3030bdf44d46"
+    },
+    "dependents": [],
+    "id": "3b1e2add-3337-498e-a5bf-a04aedf9c8b1"
+  },
+  "bcc2d3fd-51c9-47a2-8db8-3030bdf44d46": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Microsoft Teams",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1578/1.0.1578.2813/teams/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_teams",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "c9191587-e455-4a90-90ab-5977b4626afe",
+      "3b1e2add-3337-498e-a5bf-a04aedf9c8b1"
+    ],
+    "id": "bcc2d3fd-51c9-47a2-8db8-3030bdf44d46"
+  },
+  "c9191587-e455-4a90-90ab-5977b4626afe": {
+    "connectionParameters": {
+      "sku": "Enterprise",
+      "workFlowCallbackUri": "https://prod-85.westeurope.logic.azure.com:443/workflows/914b3c645db544a4ad63b5248530e31a/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=nObqA-t6faznGRYZ6hWl79mXe_opnergSh1stuabZT8",
+      "workflowEndpoint": "/subscriptions/ce4eb7c9-9c8b-4133-9141-bac869f4b0a7/resourceGroups/72F988BF86F141AF91AB2D7CD011DB47-4F57268ECFFB409AADB3A1AC54B2130D/providers/Microsoft.Logic/workflows/693bbcef-f97e-49f7-b453-254f1b89b5a8",
+      "workflowName": "693bbcef-f97e-49f7-b453-254f1b89b5a8",
+      "workflowPath": "/subscriptions/ce4eb7c9-9c8b-4133-9141-bac869f4b0a7/resourceGroups/72F988BF86F141AF91AB2D7CD011DB47-4F57268ECFFB409AADB3A1AC54B2130D/providers/Microsoft.Logic/workflows/693bbcef-f97e-49f7-b453-254f1b89b5a8"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "bcc2d3fd-51c9-47a2-8db8-3030bdf44d46": {
+          "value": "shared_teams"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "693bbcef-f97e-49f7-b453-254f1b89b5a8"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_teams": {
+          "value": "bcc2d3fd-51c9-47a2-8db8-3030bdf44d46"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "693bbcef-f97e-49f7-b453-254f1b89b5a8"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "InformTaskCreated"
+    ],
+    "dependencies": {
+      "shared_teams": "bcc2d3fd-51c9-47a2-8db8-3030bdf44d46"
+    },
+    "dependents": [],
+    "id": "c9191587-e455-4a90-90ab-5977b4626afe"
+  }
+}
