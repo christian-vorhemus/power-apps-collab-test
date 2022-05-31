@@ -37,13 +37,43 @@
         ZIndex: =4
 
     PowerBI1 As powerbi:
+        BorderThickness: =0
         DashboardId: ="b48f2bb2-ad71-4dd0-8cba-a5f496bb67e5"
-        Height: =300
+        Height: =345
         TileUrl: |-
             ="https://msit.powerbi.com/embed?dashboardId=b48f2bb2-ad71-4dd0-8cba-a5f496bb67e5&tileId=42d6542b-fac4-4b51-986f-57d59f44182f&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9ERi1NU0lULVNDVVMtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQiLCJlbWJlZEZlYXR1cmVzIjp7Im1vZGVybkVtYmVkIjpmYWxzZX19"
-        Width: =300
+        Width: =342
         WorkspaceId: ="__my-workspace"
-        X: =40
-        Y: =40
+        X: =36
+        Y: =38
         ZIndex: =5
+
+    HtmlText1_1 As htmlViewer:
+        Height: =383
+        HtmlText: |
+            ="<div style='margin:10px;width:350px;height:350px;background-color:#;box-shadow:0 3px 6px 1px  #ccc; border-radius:5px'></div>"
+        Width: =560
+        X: =15
+        Y: =403
+        ZIndex: =6
+
+    Label6_1 As label:
+        Color: =RGBA(116, 116, 116, 1)
+        Height: =70
+        Size: =18
+        Text: ="Mean time to repair"
+        Width: =192
+        X: =417
+        Y: =432
+        ZIndex: =7
+
+    Label6_2 As label:
+        Color: =RGBA(116, 116, 116, 1)
+        Height: =70
+        Size: =18
+        Text: ="Hours worked this week"
+        Width: =192
+        X: =403
+        Y: =687
+        ZIndex: =8
 
