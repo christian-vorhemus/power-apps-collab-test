@@ -37,7 +37,10 @@
         ZIndex: =4
 
     PowerBI1 As powerbi:
+        DashboardId: ="b48f2bb2-ad71-4dd0-8cba-a5f496bb67e5"
         Height: =300
+        TileUrl: |-
+            ="https://msit.powerbi.com/embed?dashboardId=b48f2bb2-ad71-4dd0-8cba-a5f496bb67e5&tileId=42d6542b-fac4-4b51-986f-57d59f44182f&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9ERi1NU0lULVNDVVMtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQiLCJlbWJlZEZlYXR1cmVzIjp7Im1vZGVybkVtYmVkIjpmYWxzZX19"
         Width: =300
         WorkspaceId: ="__my-workspace"
         X: =40
