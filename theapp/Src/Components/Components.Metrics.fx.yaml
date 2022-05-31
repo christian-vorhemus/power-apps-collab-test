@@ -1,37 +1,29 @@
 "'Components.Metrics' As CanvasComponent":
     Fill: =RGBA(0, 0, 0, 0)
-    Height: =640
+    Height: =1024
     Width: =640
     X: =0
     Y: =0
     ZIndex: =1
 
     HtmlText1 As htmlViewer:
-        Height: =285
+        Height: =383
         HtmlText: |
-            ="<div style='margin:10px;width:350px;height:250px;background-color:#;box-shadow:0 3px 6px 1px  #ccc; border-radius:5px'></div>"
+            ="<div style='margin:10px;width:350px;height:350px;background-color:#;box-shadow:0 3px 6px 1px  #ccc; border-radius:5px'></div>"
         Width: =560
         X: =15
         Y: =20
         ZIndex: =1
 
-    HtmlText1_1 As htmlViewer:
-        Height: =285
-        HtmlText: |
-            ="<div style='margin:10px;width:350px;height:250px;background-color:#;box-shadow:0 3px 6px 1px  #ccc; border-radius:5px'></div>"
-        Width: =560
-        X: =15
-        Y: =305
-        ZIndex: =2
-
     Label5 As label:
+        Align: =Align.Center
         FontWeight: =FontWeight.Bold
         Height: =228
         Size: =102
-        Text: =CountRows(HackathonSc1Tasks)
+        Text: ="7"
         Width: =178
-        X: =420
-        Y: =48
+        X: =417
+        Y: =97
         ZIndex: =3
 
     Label6 As label:
@@ -41,6 +33,14 @@
         Text: ="Open tasks"
         Width: =192
         X: =436
-        Y: =20
+        Y: =72
         ZIndex: =4
+
+    PowerBI1 As powerbi:
+        Height: =300
+        Width: =300
+        WorkspaceId: ="__my-workspace"
+        X: =40
+        Y: =40
+        ZIndex: =5
 
