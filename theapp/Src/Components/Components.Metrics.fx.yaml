@@ -24,7 +24,7 @@
         Width: =178
         X: =417
         Y: =113
-        ZIndex: =3
+        ZIndex: =2
 
     Label6 As label:
         Color: =RGBA(116, 116, 116, 1)
@@ -34,7 +34,7 @@
         Width: =192
         X: =440
         Y: =113
-        ZIndex: =4
+        ZIndex: =3
 
     PowerBI1 As powerbi:
         BorderThickness: =0
@@ -46,7 +46,7 @@
         WorkspaceId: ="__my-workspace"
         X: =30
         Y: =40
-        ZIndex: =5
+        ZIndex: =4
 
     HtmlText1_1 As htmlViewer:
         Height: =383
@@ -54,8 +54,8 @@
             ="<div style='margin:10px;width:330px;height:330px;background-color:#;box-shadow:0 3px 6px 1px  #ccc; border-radius:5px'></div>"
         Width: =560
         X: =15
-        Y: =403
-        ZIndex: =6
+        Y: =391
+        ZIndex: =5
 
     Label6_1 As label:
         Align: =Align.Center
@@ -65,18 +65,8 @@
         Text: ="Mean time to repair (days)"
         Width: =192
         X: =417
-        Y: =462
-        ZIndex: =7
-
-    Label6_2 As label:
-        Color: =RGBA(116, 116, 116, 1)
-        Height: =70
-        Size: =18
-        Text: ="Hours worked this week"
-        Width: =192
-        X: =363
-        Y: =852
-        ZIndex: =8
+        Y: =471
+        ZIndex: =6
 
     Label5_1 As label:
         Align: =Align.Center
@@ -84,30 +74,108 @@
         Height: =228
         Size: =82
         Text: =Round(Average(Filter(HackathonSc1Tasks, TaskStatus = "Inactive"), DateDiff(createdon, cr876_completedon, "Days")), 2)
-        Width: =299
-        X: =341
+        Width: =277
+        X: =363
         Y: =503
+        ZIndex: =7
+
+    ColumnChart1 As barChart:
+        Height: =317
+        Items: =ColumnChartSample
+        Y: =393
+        ZIndex: =8
+
+    HtmlText1_2 As htmlViewer:
+        Height: =261
+        HtmlText: |
+            ="<div style='margin:10px;width:580px;height:230px;background-color:#;box-shadow:0 3px 6px 1px  #ccc; border-radius:5px'></div>"
+        Width: =625
+        X: =15
+        Y: =763
         ZIndex: =9
 
-    CompositeColumnChart1 As group:
-        Height: =5
-        Width: =5
-        X: =60
-        Y: =60
+    Label6_2 As label:
+        Color: =RGBA(116, 116, 116, 1)
+        Height: =70
+        Size: =18
+        Text: ="Hours worked this week"
+        Width: =192
+        X: =417
+        Y: =788
         ZIndex: =10
 
-        Title1 As label:
-            Align: =Align.Center
-            Height: =25
-            Text: ="Chart Title"
-            Width: =400
-            X: =40
-            Y: =439
-            ZIndex: =11
+    "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Height: =964
+        Items: |-
+            =ForAll(ShowColumns(Filter(HackathonSc1Tasks, TaskStatus = "Inactive"), "cr876_completedon", "createdon"),
+            With({},
+                 {WeekNumber:WeekNum(cr876_completedon),
+                  MTR:Average(DateDiff(createdon, cr876_completedon, "Days"))
+                 }
+               )
+            )
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =Min(160, Self.Height - 60)
+        Y: =60
+        ZIndex: =11
 
-        ColumnChart1 As barChart:
-            Height: =363
-            Items: =ColumnChartSample
-            Y: =403
-            ZIndex: =12
+        Image5 As image:
+            Height: =128
+            OnSelect: =Select(Parent)
+            Width: =128
+            X: =16
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        Title4 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.WeekNumber
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - Image5.Width - 104
+            X: =Image5.X + Image5.Width + 24
+            Y: =44
+            ZIndex: =2
+
+        Subtitle3 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.MTR
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title4.Width
+            X: =Title4.X
+            Y: =Title4.Y + Title4.Height + 4
+            ZIndex: =3
+
+        NextArrow3 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =60
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
+
+        Separator4 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
 
