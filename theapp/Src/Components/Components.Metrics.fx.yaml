@@ -19,7 +19,7 @@
         Align: =Align.Center
         FontWeight: =FontWeight.Bold
         Height: =228
-        Size: =102
+        Size: =82
         Text: =CountIf(HackathonSc1Tasks, TaskStatus = "Active")
         Width: =178
         X: =417
@@ -32,8 +32,8 @@
         Size: =18
         Text: ="Open tasks"
         Width: =192
-        X: =435
-        Y: =90
+        X: =440
+        Y: =113
         ZIndex: =4
 
     PowerBI1 As powerbi:
@@ -83,7 +83,7 @@
         FontWeight: =FontWeight.Bold
         Height: =228
         Size: =82
-        Text: =Average(Filter(HackathonSc1Tasks, TaskStatus = "Inactive"), DateDiff(createdon, cr876_completedon, "Days"))
+        Text: =Round(Average(Filter(HackathonSc1Tasks, TaskStatus = "Inactive"), DateDiff(createdon, cr876_completedon, "Days")), 2)
         Width: =299
         X: =341
         Y: =503

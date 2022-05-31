@@ -523,13 +523,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "435",
+            "InvariantScript": "440",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "90",
+            "InvariantScript": "113",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
@@ -915,7 +915,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "102",
+            "InvariantScript": "82",
             "Property": "Size",
             "RuleProviderType": "Unknown"
           },
@@ -1978,7 +1978,7 @@
           },
           {
             "Category": "Data",
-            "InvariantScript": "Average(Filter(HackathonSc1Tasks, TaskStatus = \"Inactive\"), DateDiff(createdon, cr876_completedon, \"Days\"))",
+            "InvariantScript": "Round(Average(Filter(HackathonSc1Tasks, TaskStatus = \"Inactive\"), DateDiff(createdon, cr876_completedon, \"Days\")), 2)",
             "Property": "Text",
             "RuleProviderType": "Unknown"
           },
@@ -2644,7 +2644,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "637896204377953497",
+    "LastModifiedTimestamp": "637896207268887746",
     "Name": "Components.Metrics",
     "Rules": [
       {
@@ -2703,7 +2703,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637896204377953497",
+  "LastModifiedTimestamp": "637896207268887746",
   "Name": "8c8f8dc79ac34241a13c1c0b61030b6a",
   "OverridableProperties": {},
   "Version": "637895891164101251"

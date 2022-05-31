@@ -145,7 +145,7 @@
                 },
                 "region": {
                   "charLength": 107,
-                  "charOffset": 0,
+                  "charOffset": 6,
                   "snippet": {
                     "text": "Average(Filter(HackathonSc1Tasks, TaskStatus = \"Inactive\"), DateDiff(createdon, cr876_completedon, \"Days\"))"
                   }
