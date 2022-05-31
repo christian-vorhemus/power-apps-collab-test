@@ -188,7 +188,6 @@ Start As screen:
             ZIndex: =18
 
     AddTaskButton As button:
-        Fill: =RGBA(141, 198, 63, 1)
         Height: =42
         OnSelect: =Set(addTask, "yes")
         Size: =24

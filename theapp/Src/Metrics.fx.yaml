@@ -28,3 +28,31 @@ Metrics As screen:
         Y: =22
         ZIndex: =3
 
+    Label2 As label:
+        Height: =70
+        Size: =21
+        Text: |-
+            ="Active items:"
+        Width: =208
+        X: =33
+        Y: =135
+        ZIndex: =4
+
+    Label2_1 As label:
+        Height: =70
+        Size: =21
+        Text: =CountRows(HackathonSc1Tasks)
+        Width: =208
+        X: =241
+        Y: =135
+        ZIndex: =5
+
+    HtmlText2 As htmlViewer:
+        Height: =285
+        HtmlText: |-
+            ="<div style='margin:10px;width:350px;height:250px;background-color:#;box-shadow:0 3px 6px 1px  #ccc; border-radius:5px'></div>"
+        Width: =560
+        X: =21
+        Y: =240
+        ZIndex: =6
+

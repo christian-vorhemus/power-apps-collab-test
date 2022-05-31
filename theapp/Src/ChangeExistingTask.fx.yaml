@@ -613,7 +613,7 @@ ChangeExistingTask As screen:
         Size: =24
         Text: ="Update"
         Width: =151
-        X: =244
+        X: =106
         Y: =1090
         ZIndex: =4
 
@@ -625,4 +625,16 @@ ChangeExistingTask As screen:
         X: =600
         Y: =95
         ZIndex: =5
+
+    Button1_1 As button:
+        Fill: =RGBA(141, 198, 63, 1)
+        OnSelect: |-
+            =Patch(HackathonSc1Tasks, selectedItemFromStartScreen., { Status: 1 });
+            Navigate(Start);
+        Size: =24
+        Text: ="Mark as Done"
+        Width: =242
+        X: =303
+        Y: =1090
+        ZIndex: =6
 

@@ -135,6 +135,207 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "ChangeExistingTask.Button1_1.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ChangeExistingTask.Button1_1.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 53,
+                  "snippet": {
+                    "text": ","
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "ChangeExistingTask",
+                "type": "ChangeExistingTask.Button1_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Ident",
+              "Comma"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrExpectedFound-Ex-Fnd",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ChangeExistingTask.Button1_1.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ChangeExistingTask.Button1_1.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 52,
+                  "snippet": {
+                    "text": "."
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "ChangeExistingTask",
+                "type": "ChangeExistingTask.Button1_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "_"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ChangeExistingTask.Button1_1.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ChangeExistingTask.Button1_1.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 69,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "Patch(HackathonSc1Tasks, selectedItemFromStartScreen., { Status: 1 })"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "ChangeExistingTask",
+                "type": "ChangeExistingTask.Button1_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Patch"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Components.Metrics'.Label5.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Components.Metrics'.Label5.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 17,
+                  "charOffset": 10,
+                  "snippet": {
+                    "text": "HackathonSc1Tasks"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Components.Metrics",
+                "type": "'Components.Metrics'.Label5"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "HackathonSc1Tasks"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Components.Metrics'.Label5.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Components.Metrics'.Label5.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 28,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "CountRows(HackathonSc1Tasks)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Components.Metrics",
+                "type": "'Components.Metrics'.Label5"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "ChangeExistingTask.Icon6_1.AccessibleLabel"
                 }
               ],
