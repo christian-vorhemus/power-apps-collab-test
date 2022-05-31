@@ -902,3 +902,8 @@ Start As screen:
             Y: =106
             ZIndex: =20
 
+    Rectangle1 As rectangle:
+        X: =238
+        Y: =303
+        ZIndex: =24
+
