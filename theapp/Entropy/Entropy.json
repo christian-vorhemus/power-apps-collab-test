@@ -24,8 +24,10 @@
     "Button3": 84,
     "Button4": 73,
     "ChangeExistingTask": 94,
+    "ColumnChart1": 144,
     "Components.Metrics": 3,
     "Components.Metrics_1": 93,
+    "CompositeColumnChart1": 146,
     "Context": 72,
     "ContextImage_DataCard1": 33,
     "ContextImage_DataCard2": 114,
@@ -99,6 +101,7 @@
     "Label3": 17,
     "Label4": 78,
     "Label5": 10,
+    "Label5_1": 142,
     "Label6": 7,
     "Label6_1": 8,
     "Label6_2": 9,
@@ -143,11 +146,12 @@
     "TaskName": 76,
     "TextInput2": 79,
     "TextInput3": 80,
-    "TextInput4": 81
+    "TextInput4": 81,
+    "Title1": 143
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "05/31/2022 16:50:41",
+  "HeaderLastSavedDateTimeUTC": "05/31/2022 19:01:57",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "3b1e2add-3337-498e-a5bf-a04aedf9c8b1": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/4e3e283101fe4485acccb22caafc0f84\"",
@@ -170,6 +174,7 @@
     "8c8f8dc79ac34241a13c1c0b61030b6a": 0
   },
   "OrderDataSource": {
+    "ColumnChartSample": 10,
     "ComboBoxSample": 6,
     "CustomGallerySample": 7,
     "DropDownSample": 8,
@@ -179,7 +184,8 @@
     "HackathonSc1Tasks\\cr876_maintenancetechnician": 2,
     "HackathonSc1Tasks\\default.cds_cr876_hackathonsc1tasks_views": 5,
     "InformTaskAssigned": 0,
-    "InformTaskCreated": 1
+    "InformTaskCreated": 1,
+    "LegendSample": 11
   },
   "OrderGroupControls": {
     "AddNewTask": {
@@ -187,6 +193,10 @@
       "AddNewTaskButton": 2,
       "Icon6": 3,
       "NewTaskForm": 1
+    },
+    "CompositeColumnChart1": {
+      "ColumnChart1": 1,
+      "Title1": 0
     },
     "ImageGroup": {
       "Icon4": 2,
@@ -211,7 +221,8 @@
   "OrderTemplate": {},
   "OrderXMLTemplate": {
     "addMedia": 6,
-    "attachments": 13,
+    "attachments": 14,
+    "barChart": 13,
     "button": 3,
     "combobox": 7,
     "dropdown": 10,
@@ -246,8 +257,10 @@
     "Button3": 75,
     "Button4": 64,
     "ChangeExistingTask": 2,
+    "ColumnChart1": 133,
     "Components.Metrics": 0,
     "Components.Metrics_1": 127,
+    "CompositeColumnChart1": 132,
     "Context": 63,
     "ContextImage_DataCard1": 23,
     "ContextImage_DataCard2": 96,
@@ -302,7 +315,7 @@
     "Header_1": 77,
     "Header_2": 124,
     "HtmlText1": 128,
-    "HtmlText1_1": 128,
+    "HtmlText1_1": 134,
     "Icon1": 73,
     "Icon2": 126,
     "Icon3": 55,
@@ -321,9 +334,10 @@
     "Label3": 5,
     "Label4": 69,
     "Label5": 131,
+    "Label5_1": 137,
     "Label6": 130,
-    "Label6_1": 130,
-    "Label6_2": 130,
+    "Label6_1": 136,
+    "Label6_2": 139,
     "Logo": 1,
     "Logo_1": 78,
     "Logo_2": 125,
@@ -365,7 +379,8 @@
     "TaskName": 67,
     "TextInput2": 70,
     "TextInput3": 71,
-    "TextInput4": 72
+    "TextInput4": 72,
+    "Title1": 135
   },
   "ResourcesJsonIndices": {
     "Image-MS-PowerPlatform_logo_stacked_c-gray_rgb": 1,
@@ -390,7 +405,7 @@
       "htmlViewer": 2,
       "icon": 8,
       "image": 6,
-      "label": 67,
+      "label": 68,
       "powerbi": 1,
       "rectangle": 1,
       "screen": 3,
@@ -398,7 +413,7 @@
       "typedDataCard": 15
     },
     "DeserializationLoadTime": 2.9410097,
-    "ErrorCount": 3
+    "ErrorCount": 4
   },
   "WasLocalDatabaseReferencesEmpty": false
 }
