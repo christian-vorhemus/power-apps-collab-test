@@ -20,7 +20,7 @@
         FontWeight: =FontWeight.Bold
         Height: =228
         Size: =102
-        Text: ="7"
+        Text: =CountIf(HackathonSc1Tasks, TaskStatus = "Active")
         Width: =178
         X: =417
         Y: =97
@@ -39,13 +39,14 @@
     PowerBI1 As powerbi:
         BorderThickness: =0
         DashboardId: ="b48f2bb2-ad71-4dd0-8cba-a5f496bb67e5"
-        Height: =345
+        Height: =342
+        PowerBIInteractions: =false
         TileUrl: |-
             ="https://msit.powerbi.com/embed?dashboardId=b48f2bb2-ad71-4dd0-8cba-a5f496bb67e5&tileId=42d6542b-fac4-4b51-986f-57d59f44182f&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9ERi1NU0lULVNDVVMtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQiLCJlbWJlZEZlYXR1cmVzIjp7Im1vZGVybkVtYmVkIjpmYWxzZX19"
         Width: =342
         WorkspaceId: ="__my-workspace"
-        X: =36
-        Y: =38
+        X: =33
+        Y: =40
         ZIndex: =5
 
     HtmlText1_1 As htmlViewer:
