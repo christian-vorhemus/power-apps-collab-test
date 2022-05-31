@@ -99,6 +99,7 @@
   },
   "ScreenOrder": [
     "Start",
-    "ChangeExistingTask"
+    "ChangeExistingTask",
+    "Metrics"
   ]
 }

@@ -192,10 +192,10 @@ Start As screen:
         Height: =42
         OnSelect: =Set(addTask, "yes")
         Size: =24
-        Text: ="Add Task New"
+        Text: ="Add Task"
         Visible: =If(addTask = "yes", false, true) && If(showImage = "yes", false, true)
-        Width: =245
-        X: =388
+        Width: =186
+        X: =447
         Y: =99
         ZIndex: =19
 
@@ -902,8 +902,13 @@ Start As screen:
             Y: =106
             ZIndex: =20
 
-    Rectangle1 As rectangle:
-        X: =238
-        Y: =303
+    Icon7 As icon.Trending:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =54
+        Icon: =Icon.Trending
+        OnSelect: =Navigate(Metrics, ScreenTransition.Fade,{})
+        Width: =50
+        X: =570
+        Y: =18
         ZIndex: =24
 
