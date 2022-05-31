@@ -629,7 +629,7 @@ ChangeExistingTask As screen:
     Button1_1 As button:
         Fill: =RGBA(141, 198, 63, 1)
         OnSelect: |-
-            =Navigate(Start); Patch(HackathonSc1Tasks, selectedItemFromStartScreen, { TaskStatus: 'Inactive'  });
+            =Navigate(Start); Patch(HackathonSc1Tasks, selectedItemFromStartScreen, { TaskStatus: "Inactive"  });
         Size: =24
         Text: ="Mark as Done"
         Width: =242

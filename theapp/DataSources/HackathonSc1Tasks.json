@@ -13,6 +13,7 @@
       "{Attachments}": "Attachments",
       "cr876_asset": "Asset",
       "cr876_assignedpersonemail": "AssignedPersonEmail",
+      "cr876_completedon": "Completed On",
       "cr876_contextimage": "ContextImage",
       "cr876_hackathonsc1tasks_Annotations": "Notes",
       "cr876_hackathonsc1tasks_AsyncOperations": "System Jobs",
@@ -31,6 +32,7 @@
       "cr876_imageid": "cr876_ImageId",
       "cr876_role": "Role",
       "cr876_shift": "Shift",
+      "cr876_taskstatus": "TaskStatus",
       "createdby": "Created By",
       "createdon": "Created On",
       "createdonbehalfby": "Created By (Delegate)",
@@ -90,7 +92,8 @@
     "Name": "cr876_hackathonsc1tasks_statuscode",
     "OptionSetInfoNameMapping": {
       "1": "Active",
-      "2": "Inactive"
+      "2": "Inactive",
+      "3": "Done"
     },
     "OptionSetIsBooleanValued": false,
     "OptionSetIsGlobal": false,
