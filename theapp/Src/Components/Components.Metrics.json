@@ -45,11 +45,11 @@
         "Name": "HtmlText1",
         "Parent": "Components.Metrics",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 130,
+        "PublishOrderIndex": 129,
         "Rules": [
           {
             "Category": "Data",
-            "InvariantScript": "\"<div style='margin:10px;width:330px;height:330px;background-color:#;box-shadow:0 3px 6px 1px  #ccc; border-radius:5px'></div>\"\r\n",
+            "InvariantScript": "\"<div style='margin:10px;width:330px;height:310px;background-color:#;box-shadow:0 3px 6px 1px  #ccc; border-radius:5px'></div>\"\r\n",
             "Property": "HtmlText",
             "RuleProviderType": "Unknown"
           },
@@ -133,7 +133,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "20",
+            "InvariantScript": "0",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
@@ -212,7 +212,7 @@
         "Name": "PowerBI1",
         "Parent": "Components.Metrics",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 131,
+        "PublishOrderIndex": 130,
         "Rules": [
           {
             "Category": "Data",
@@ -258,13 +258,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "30",
+            "InvariantScript": "33",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "40",
+            "InvariantScript": "21",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
@@ -276,7 +276,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "320",
+            "InvariantScript": "301",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -394,7 +394,7 @@
         "Name": "Label5",
         "Parent": "Components.Metrics",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 132,
+        "PublishOrderIndex": 131,
         "Rules": [
           {
             "Category": "Data",
@@ -725,7 +725,7 @@
         "Name": "Label6",
         "Parent": "Components.Metrics",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 133,
+        "PublishOrderIndex": 132,
         "Rules": [
           {
             "Category": "Data",
@@ -1019,11 +1019,11 @@
         "Name": "HtmlText1_1",
         "Parent": "Components.Metrics",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 134,
+        "PublishOrderIndex": 133,
         "Rules": [
           {
             "Category": "Data",
-            "InvariantScript": "\"<div style='margin:10px;width:330px;height:330px;background-color:#;box-shadow:0 3px 6px 1px  #ccc; border-radius:5px'></div>\"\r\n",
+            "InvariantScript": "\"<div style='margin:10px;width:330px;height:310px;background-color:#;box-shadow:0 3px 6px 1px  #ccc; border-radius:5px'></div>\"\r\n",
             "Property": "HtmlText",
             "RuleProviderType": "Unknown"
           },
@@ -1107,7 +1107,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "391",
+            "InvariantScript": "341",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
@@ -1177,7 +1177,7 @@
         "Name": "ColumnChart1",
         "Parent": "Components.Metrics",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 135,
+        "PublishOrderIndex": 134,
         "Rules": [
           {
             "Category": "Data",
@@ -1242,7 +1242,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "414",
+            "InvariantScript": "359",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
@@ -1390,7 +1390,7 @@
         "Name": "Label6_1",
         "Parent": "Components.Metrics",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 136,
+        "PublishOrderIndex": 135,
         "Rules": [
           {
             "Category": "Data",
@@ -1532,7 +1532,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "471",
+            "InvariantScript": "408",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
@@ -1728,7 +1728,7 @@
         "Name": "Label5_1",
         "Parent": "Components.Metrics",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 137,
+        "PublishOrderIndex": 136,
         "Rules": [
           {
             "Category": "Data",
@@ -1870,7 +1870,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "503",
+            "InvariantScript": "418",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
@@ -1895,6 +1895,344 @@
           {
             "Category": "Design",
             "InvariantScript": "7",
+            "Property": "ZIndex",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "1.2",
+            "Property": "LineHeight",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "0",
+            "Property": "BorderThickness",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "0",
+            "Property": "FocusedBorderThickness",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "82",
+            "Property": "Size",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "false",
+            "Property": "Italic",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "false",
+            "Property": "Underline",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "false",
+            "Property": "Strikethrough",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "5",
+            "Property": "PaddingTop",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "5",
+            "Property": "PaddingRight",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "5",
+            "Property": "PaddingBottom",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "5",
+            "Property": "PaddingLeft",
+            "RuleProviderType": "Unknown"
+          }
+        ],
+        "StyleName": "defaultLabelStyle",
+        "Template": {
+          "CustomGroupControlTemplateName": "",
+          "FirstParty": true,
+          "Id": "http://microsoft.com/appmagic/label",
+          "IsComponentDefinition": false,
+          "IsCustomGroupControlTemplate": false,
+          "IsPremiumPcfControl": false,
+          "LastModifiedTimestamp": "0",
+          "Name": "label",
+          "OverridableProperties": {},
+          "Version": "2.5.0"
+        },
+        "Type": "ControlInfo",
+        "VariantName": ""
+      },
+      {
+        "AllowAccessToGlobals": true,
+        "Children": [],
+        "ControlPropertyState": [
+          "Live",
+          "Overflow",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "\"Text\"",
+            "InvariantPropertyName": "Text",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
+          "Role",
+          "Color",
+          "DisabledColor",
+          "PressedColor",
+          "HoverColor",
+          "BorderColor",
+          "DisabledBorderColor",
+          "PressedBorderColor",
+          "HoverBorderColor",
+          "BorderStyle",
+          "FocusedBorderColor",
+          "Fill",
+          "DisabledFill",
+          "PressedFill",
+          "HoverFill",
+          "Font",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "FontWeight",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "Align",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
+          "VerticalAlign",
+          "X",
+          "Y",
+          "Width",
+          "Height",
+          "DisplayMode",
+          "ZIndex",
+          "LineHeight",
+          "BorderThickness",
+          "FocusedBorderThickness",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "Size",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
+          "Italic",
+          "Underline",
+          "Strikethrough",
+          "PaddingTop",
+          "PaddingRight",
+          "PaddingBottom",
+          "PaddingLeft"
+        ],
+        "ControlUniqueId": "146",
+        "HasDynamicProperties": false,
+        "Index": 0,
+        "IsAutoGenerated": false,
+        "IsDataControl": false,
+        "IsFromScreenLayout": false,
+        "IsGroupControl": false,
+        "IsLocked": false,
+        "LayoutName": "",
+        "MetaDataIDKey": "",
+        "Name": "Label5_2",
+        "Parent": "Components.Metrics",
+        "PersistMetaDataIDKey": false,
+        "PublishOrderIndex": 136,
+        "Rules": [
+          {
+            "Category": "Data",
+            "InvariantScript": "Live.Off",
+            "Property": "Live",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Data",
+            "InvariantScript": "Round(Average(Filter(HackathonSc1Tasks, TaskStatus = \"Inactive\"), DateDiff(createdon, cr876_completedon, \"Days\")), 2)",
+            "Property": "Text",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Data",
+            "InvariantScript": "TextRole.Default",
+            "Property": "Role",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "Overflow.Hidden",
+            "Property": "Overflow",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "RGBA(0, 0, 0, 1)",
+            "Property": "Color",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "RGBA(166, 166, 166, 1)",
+            "Property": "DisabledColor",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "Self.Color",
+            "Property": "PressedColor",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "Self.Color",
+            "Property": "HoverColor",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "RGBA(0, 18, 107, 1)",
+            "Property": "BorderColor",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "RGBA(56, 56, 56, 1)",
+            "Property": "DisabledBorderColor",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "Self.BorderColor",
+            "Property": "PressedBorderColor",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "Self.BorderColor",
+            "Property": "HoverBorderColor",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "BorderStyle.Solid",
+            "Property": "BorderStyle",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "Self.BorderColor",
+            "Property": "FocusedBorderColor",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "RGBA(0, 0, 0, 0)",
+            "Property": "Fill",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "RGBA(0, 0, 0, 0)",
+            "Property": "DisabledFill",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "Self.Fill",
+            "Property": "PressedFill",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "Self.Fill",
+            "Property": "HoverFill",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "Font.'Open Sans'",
+            "Property": "Font",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "FontWeight.Bold",
+            "Property": "FontWeight",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "Align.Center",
+            "Property": "Align",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "VerticalAlign.Middle",
+            "Property": "VerticalAlign",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "363",
+            "Property": "X",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "760",
+            "Property": "Y",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "277",
+            "Property": "Width",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "228",
+            "Property": "Height",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "DisplayMode.Edit",
+            "Property": "DisplayMode",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "11",
             "Property": "ZIndex",
             "RuleProviderType": "Unknown"
           },
@@ -2022,11 +2360,11 @@
         "Name": "HtmlText1_2",
         "Parent": "Components.Metrics",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 138,
+        "PublishOrderIndex": 137,
         "Rules": [
           {
             "Category": "Data",
-            "InvariantScript": "\"<div style='margin:10px;width:580px;height:230px;background-color:#;box-shadow:0 3px 6px 1px  #ccc; border-radius:5px'></div>\"\r\n",
+            "InvariantScript": "\"<div style='margin:10px;width:330px;height:310px;background-color:#;box-shadow:0 3px 6px 1px  #ccc; border-radius:5px'></div>\"\r\n",
             "Property": "HtmlText",
             "RuleProviderType": "Unknown"
           },
@@ -2098,7 +2436,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "261",
+            "InvariantScript": "347",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -2110,7 +2448,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "763",
+            "InvariantScript": "677",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
@@ -2175,7 +2513,14 @@
           "HoverFill",
           "Font",
           "FontWeight",
-          "Align",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "Align",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           "VerticalAlign",
           "X",
           "Y",
@@ -2215,7 +2560,7 @@
         "Name": "Label6_2",
         "Parent": "Components.Metrics",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 139,
+        "PublishOrderIndex": 138,
         "Rules": [
           {
             "Category": "Data",
@@ -2339,7 +2684,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "Align.Left",
+            "InvariantScript": "Align.Center",
             "Property": "Align",
             "RuleProviderType": "Unknown"
           },
@@ -2357,7 +2702,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "788",
+            "InvariantScript": "751",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
@@ -2492,7 +2837,7 @@
       "ZIndex",
       "OnReset"
     ],
-    "LastModifiedTimestamp": "637896763394574984",
+    "LastModifiedTimestamp": "637896927868096000",
     "Name": "Components.Metrics",
     "Rules": [
       {
@@ -2557,7 +2902,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637896763394574984",
+  "LastModifiedTimestamp": "637896927868096000",
   "Name": "8c8f8dc79ac34241a13c1c0b61030b6a",
   "OverridableProperties": {},
   "Version": "637895891164101251"
