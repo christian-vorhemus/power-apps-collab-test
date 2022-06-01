@@ -1,3 +1,9 @@
 App As appinfo:
     BackEnabled: =false
+    OnStart: |-
+        =ClearCollect(
+            newMainMenuItems,
+            {title: "Project"},
+            {title: "Task"}
+        )
 

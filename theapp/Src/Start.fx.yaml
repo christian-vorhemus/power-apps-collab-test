@@ -1,4 +1,5 @@
 Start As screen:
+    OnVisible: =
 
     "TaskList As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         Height: =966
@@ -188,13 +189,16 @@ Start As screen:
             ZIndex: =18
 
     AddTaskButton As button:
+        Align: =Align.Left
+        Fill: =RGBA(202, 202, 202, 1)
         Height: =42
         OnSelect: =Set(addTask, "yes")
+        PaddingLeft: =10
         Size: =24
-        Text: ="Add Task"
+        Text: ="New"
         Visible: =If(addTask = "yes", false, true) && If(showImage = "yes", false, true)
-        Width: =186
-        X: =447
+        Width: =124
+        X: =507
         Y: =99
         ZIndex: =19
 
@@ -910,4 +914,64 @@ Start As screen:
         X: =570
         Y: =18
         ZIndex: =24
+
+    Icon9 As icon.Add:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =30
+        Icon: =Icon.Add
+        Width: =30
+        X: =592
+        Y: =105
+        ZIndex: =25
+
+    "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =619
+        Items: =newMainMenuItems
+        Layout: =Layout.Vertical
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =203
+        Width: =364
+        X: =267
+        Y: =143
+        ZIndex: =26
+
+        Title1 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.title
+            VerticalAlign: =VerticalAlign.Top
+            Width: |
+                =Parent.TemplateWidth
+            X: =
+            Y: =44
+            ZIndex: =2
+
+        NextArrow1 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =60
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
+
+        Separator1 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
 

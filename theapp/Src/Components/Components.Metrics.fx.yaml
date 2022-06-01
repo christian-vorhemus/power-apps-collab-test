@@ -108,7 +108,6 @@
         ZIndex: =9
 
     Label6_2 As label:
-        Align: =Align.Center
         Color: =RGBA(116, 116, 116, 1)
         Height: =70
         Size: =18
