@@ -1,10 +1,13 @@
 Start As screen:
-    OnVisible: =
+    OnVisible: |-
+        =UpdateContext({showMainMenu:false})
 
     "TaskList As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         Height: =966
         Items: =Filter(HackathonSc1Tasks, TaskStatus <> "Inactive")
         Layout: =Layout.Vertical
+        OnSelect: |-
+            =UpdateContext({showMainMenu:false})
         TemplatePadding: =0
         TemplateSize: =270
         Y: =170
@@ -192,7 +195,8 @@ Start As screen:
         Align: =Align.Left
         Fill: =RGBA(202, 202, 202, 1)
         Height: =42
-        OnSelect: =Set(addTask, "yes")
+        OnSelect: |-
+            =UpdateContext({showMainMenu:true})
         PaddingLeft: =10
         Size: =24
         Text: ="New"
@@ -329,6 +333,8 @@ Start As screen:
         Fill: =RGBA(204, 204, 204, 1)
         Font: =Font.'Segoe UI'
         Height: =90
+        OnSelect: |-
+            =UpdateContext({showMainMenu:false})
         Size: =40
         Text: =""
         Width: =640
@@ -344,6 +350,8 @@ Start As screen:
 
     Label1 As label:
         Height: =70
+        OnSelect: |-
+            =UpdateContext({showMainMenu:false})
         Size: =21
         Text: |-
             ="form mode: " & NewTaskForm.Mode & "    displaymode:" & NewTaskForm.DisplayMode
@@ -919,26 +927,37 @@ Start As screen:
         Color: =RGBA(255, 255, 255, 1)
         Height: =30
         Icon: =Icon.Add
+        Visible: =If(addTask = "yes", false, true)
         Width: =30
         X: =592
         Y: =105
         ZIndex: =25
 
     "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =619
+        Fill: =RGBA(202, 202, 202, 1)
+        Height: =120
         Items: =newMainMenuItems
         Layout: =Layout.Vertical
+        OnSelect: |-
+            =Switch(
+                ThisItem.title,
+                "Task",
+                Set(addTask, "yes")
+            );
+            UpdateContext({showMainMenu:false})
         ShowScrollbar: =false
         TemplatePadding: =0
-        TemplateSize: =203
+        TemplateSize: =59
+        Visible: =showMainMenu
         Width: =364
         X: =267
-        Y: =143
+        Y: =144
         ZIndex: =26
 
         Title1 As label:
-            Height: =Self.Size * 1.8
+            Align: =Align.Right
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =36
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -946,27 +965,10 @@ Start As screen:
             PaddingTop: =0
             Text: =ThisItem.title
             VerticalAlign: =VerticalAlign.Top
-            Width: |
-                =Parent.TemplateWidth
-            X: =
-            Y: =44
+            Width: =340
+            X: =12
+            Y: =9
             ZIndex: =2
-
-        NextArrow1 As icon.ChevronRight:
-            AccessibleLabel: =Self.Tooltip
-            Height: =60
-            Icon: =Icon.ChevronRight
-            OnSelect: =Select(Parent)
-            PaddingBottom: =10
-            PaddingLeft: =10
-            PaddingRight: =10
-            PaddingTop: =10
-            TabIndex: =0
-            Tooltip: ="View item details"
-            Width: =60
-            X: =Parent.TemplateWidth - Self.Width - 5
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =4
 
         Separator1 As rectangle:
             Height: =1
