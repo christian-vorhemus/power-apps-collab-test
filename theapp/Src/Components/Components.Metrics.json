@@ -45,7 +45,7 @@
         "Name": "HtmlText1",
         "Parent": "Components.Metrics",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 134,
+        "PublishOrderIndex": 136,
         "Rules": [
           {
             "Category": "Data",
@@ -212,7 +212,7 @@
         "Name": "PowerBI1",
         "Parent": "Components.Metrics",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 135,
+        "PublishOrderIndex": 137,
         "Rules": [
           {
             "Category": "Data",
@@ -394,7 +394,7 @@
         "Name": "Label5",
         "Parent": "Components.Metrics",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 136,
+        "PublishOrderIndex": 138,
         "Rules": [
           {
             "Category": "Data",
@@ -725,7 +725,7 @@
         "Name": "Label6",
         "Parent": "Components.Metrics",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 137,
+        "PublishOrderIndex": 139,
         "Rules": [
           {
             "Category": "Data",
@@ -1019,7 +1019,7 @@
         "Name": "HtmlText1_1",
         "Parent": "Components.Metrics",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 138,
+        "PublishOrderIndex": 140,
         "Rules": [
           {
             "Category": "Data",
@@ -1177,7 +1177,7 @@
         "Name": "ColumnChart1",
         "Parent": "Components.Metrics",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 139,
+        "PublishOrderIndex": 141,
         "Rules": [
           {
             "Category": "Data",
@@ -1390,7 +1390,7 @@
         "Name": "Label6_1",
         "Parent": "Components.Metrics",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 140,
+        "PublishOrderIndex": 142,
         "Rules": [
           {
             "Category": "Data",
@@ -1728,7 +1728,7 @@
         "Name": "Label5_1",
         "Parent": "Components.Metrics",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 141,
+        "PublishOrderIndex": 143,
         "Rules": [
           {
             "Category": "Data",
@@ -2022,7 +2022,7 @@
         "Name": "HtmlText1_2",
         "Parent": "Components.Metrics",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 142,
+        "PublishOrderIndex": 144,
         "Rules": [
           {
             "Category": "Data",
@@ -2222,7 +2222,7 @@
         "Name": "Label6_2",
         "Parent": "Components.Metrics",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 143,
+        "PublishOrderIndex": 145,
         "Rules": [
           {
             "Category": "Data",
@@ -2560,7 +2560,7 @@
         "Name": "Label5_2",
         "Parent": "Components.Metrics",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 144,
+        "PublishOrderIndex": 146,
         "Rules": [
           {
             "Category": "Data",
