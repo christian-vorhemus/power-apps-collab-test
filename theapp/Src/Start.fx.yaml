@@ -4,7 +4,7 @@ Start As screen:
 
     "TaskList As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         Height: =966
-        Items: =Filter(HackathonSc1Tasks, TaskStatus <> "Inactive", TaskType = TaskTypeChoice.Standard)
+        Items: =Filter(HackathonSc1Tasks, TaskStatus <> "Inactive", TaskType <> TaskTypeChoice.Subtask)
         Layout: =Layout.Vertical
         OnSelect: |-
             =UpdateContext({showMainMenu:false})
@@ -157,6 +157,17 @@ Start As screen:
             X: =572
             Y: =225
             ZIndex: =16
+
+        Checkbox3 As checkbox:
+            Height: =61
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: ="Option"
+            Visible: =If(ThisItem.TaskType = TaskTypeChoice.'5S', true, true)
+            Width: =208
+            X: =250
+            Y: =164
+            ZIndex: =17
 
     ImageGroup As group:
         Height: =5
@@ -1052,6 +1063,7 @@ Start As screen:
                 {
                     'Task Name':Value,
                     TaskStatus: "Active",
+                    TaskType:TaskTypeChoice.Subtask,
                     MasterTask:lastRecordId,
                 AssignedPersonEmail:NewTaskForm.LastSubmit.AssignedPersonEmail
                 })
@@ -1063,6 +1075,7 @@ Start As screen:
                     'Task Name':Value,
                     TaskStatus: "Active",
                     MasterTask:lastRecordId,
+                    TaskType:TaskTypeChoice.Standard,
                 AssignedPersonEmail:NewTaskForm.LastSubmit.AssignedPersonEmail
                 })
                 ));

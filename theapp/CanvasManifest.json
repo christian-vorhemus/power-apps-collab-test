@@ -81,9 +81,9 @@
     "DocumentType": "App",
     "EnableInstrumentation": false,
     "FileID": "38571dd8-8e6e-449c-aac1-b72a722c32ff",
-    "Id": "75721063-d92d-425f-8611-d7be45fa7ae4",
+    "Id": "a5d1a725-115a-4131-b1b6-fd33003e7d2d",
     "InstrumentationKey": "",
-    "Name": "HackathonScenario1",
+    "Name": "HackathonScenario1.msapp",
     "OriginatingVersion": "1.324"
   },
   "PublishInfo": {
