@@ -335,6 +335,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Components.Metrics'.ColumnChart4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Components.Metrics'.ColumnChart4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Components.Metrics",
+                "type": "'Components.Metrics'.ColumnChart4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Components.Metrics'.ColumnChart1.AccessibleLabel"
                 }
               ],
@@ -1265,19 +1295,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Start.TaskName.AccessibleLabel"
+                  "fullyQualifiedName": "Start.NewTaskForm.TaskType_DataCard3.DataCardValue16.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Start.TaskName.AccessibleLabel",
+                  "fullyQualifiedName": "Start.NewTaskForm.TaskType_DataCard3.DataCardValue16.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Start",
-                "type": "Start.TaskName"
+                "type": "Start.NewTaskForm.TaskType_DataCard3.DataCardValue16"
               }
             }
           ],
@@ -1505,6 +1535,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Start.TaskName.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Start.TaskName.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Start",
+                "type": "Start.TaskName"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Start.Dropdown1.AccessibleLabel"
                 }
               ],
@@ -1608,66 +1668,6 @@
                 "member": "AccessibleLabel",
                 "module": "Start",
                 "type": "Start.TextInput4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Start.NewTaskForm.TaskType_DataCard3.DataCardValue16.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Start.NewTaskForm.TaskType_DataCard3.DataCardValue16.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Start",
-                "type": "Start.NewTaskForm.TaskType_DataCard3.DataCardValue16"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Components.Metrics'.ColumnChart4.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Components.Metrics'.ColumnChart4.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Components.Metrics",
-                "type": "'Components.Metrics'.ColumnChart4"
               }
             }
           ],
