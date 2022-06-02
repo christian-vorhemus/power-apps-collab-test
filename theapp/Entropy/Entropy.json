@@ -109,7 +109,6 @@
     "ImageFixedState_DataCard1": 57,
     "ImageGroup": 155,
     "Label1": 77,
-    "Label2": 163,
     "Label3": 75,
     "Label4": 147,
     "Label5": 7,
@@ -169,12 +168,12 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "06/02/2022 09:39:22",
+  "HeaderLastSavedDateTimeUTC": "06/02/2022 11:34:51",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "3b1e2add-3337-498e-a5bf-a04aedf9c8b1": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/4e3e283101fe4485acccb22caafc0f84\"",
-    "bcc2d3fd-51c9-47a2-8db8-3030bdf44d46": "\"/providers/microsoft.powerapps/apis/shared_teams/connections/142a26b75bf5413f96f012eaf42f11bc\"",
-    "c9191587-e455-4a90-90ab-5977b4626afe": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/4e3e283101fe4485acccb22caafc0f84\""
+    "98e7676f-f3ef-4604-8c90-835c86856a8d": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/693bbceff97e49f7b453254f1b89b5a8-19cafa2a656a05bf\"",
+    "bcc2d3fd-51c9-47a2-8db8-3030bdf44d46": "\"/providers/microsoft.powerapps/apis/shared_teams/connections/142a26b75bf5413f96f012eaf42f11bc\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
@@ -203,7 +202,7 @@
     "HackathonSc1Tasks\\cr876_tasktypechoice": 2,
     "HackathonSc1Tasks\\default.cds_cr876_hackathonsc1tasks_views": 6,
     "InformTaskAssigned": 0,
-    "InformTaskCreated": 1,
+    "InformTaskAssigned_1": 1,
     "LegendSample": 12,
     "newMainMenuItems": 13,
     "Revenue": 15,
@@ -360,7 +359,6 @@
     "ImageFixedState_DataCard1": 132,
     "ImageGroup": 5,
     "Label1": 8,
-    "Label2": 0,
     "Label3": 4,
     "Label4": 84,
     "Label5": 146,

@@ -137,7 +137,8 @@
     "OptionSetInfoNameMapping": {
       "0": "Standard",
       "1": "5S",
-      "2": "Kaizen"
+      "2": "Kaizen",
+      "3": "Subtask"
     },
     "OptionSetIsBooleanValued": false,
     "OptionSetIsGlobal": true,
