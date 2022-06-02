@@ -971,7 +971,7 @@ Start As screen:
             OnSelect: |-
                 =SubmitForm(NewTaskForm);
                 
-                If(TaskTemplate.Selected.Value
+                
                 
                 Set(lastSubmitFromForm, NewTaskForm.LastSubmit);
                 

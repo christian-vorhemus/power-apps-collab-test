@@ -5,5 +5,9 @@ App As appinfo:
             newMainMenuItems,
             {title: "Project"},
             {title: "Task"}
-        )
+        );
+        
+        ClearCollect(WeekdayWork, { Weekday: "Mon", Hours: 7.5 }, { Weekday: "Tue", Hours: 9.5 }, { Weekday: "Wed", Hours: 6 }, { Weekday: "Thu", Hours: 7.5 }, { Weekday: "Fri", Hours: 6 }, { Weekday: "Sat", Hours: 3 }, { Weekday: "Sun", Hours: 4.5 } );
+        
+        Collect(Revenue, {Year:"2013", Europa:24000, Ganymede:22300, Callisto:21200}, {Year:"2014", Europa:26500, Ganymede:25700, Callisto:24700},{Year:"2014", Europa:27900, Ganymede:28300, Callisto:25600});
 

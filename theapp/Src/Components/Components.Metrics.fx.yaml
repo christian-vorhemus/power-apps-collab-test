@@ -95,16 +95,16 @@
                  }
                )
             )
-        Y: =359
+        Y: =370
         ZIndex: =8
 
     HtmlText1_2 As htmlViewer:
-        Height: =347
+        Height: =341
         HtmlText: |
             ="<div style='margin:10px;width:330px;height:310px;background-color:#;box-shadow:0 3px 6px 1px  #ccc; border-radius:5px'></div>"
         Width: =625
         X: =15
-        Y: =677
+        Y: =683
         ZIndex: =9
 
     Label6_2 As label:
@@ -122,9 +122,15 @@
         FontWeight: =FontWeight.Bold
         Height: =228
         Size: =82
-        Text: =Round(Average(Filter(HackathonSc1Tasks, TaskStatus = "Inactive"), DateDiff(createdon, cr876_completedon, "Days")), 2)
+        Text: =Round(Average(Filter(HackathonSc1Tasks, TaskStatus = "Inactive", Year('Completed On') = Year(Now()), WeekNum('Completed On') = WeekNum(Now())), DateDiff(cr876_startedon, cr876_completedon, "Hours")), 2)
         Width: =277
         X: =363
         Y: =760
         ZIndex: =11
+
+    ColumnChart4 As barChart:
+        Height: =335
+        Items: =WeekdayWork
+        Y: =614
+        ZIndex: =14
 

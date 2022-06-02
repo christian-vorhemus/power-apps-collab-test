@@ -26,6 +26,7 @@
     "Button4": 99,
     "ChangeExistingTask": 15,
     "ColumnChart1": 9,
+    "ColumnChart4": 198,
     "Components.Metrics": 3,
     "Components.Metrics_1": 68,
     "Context": 98,
@@ -162,7 +163,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "06/02/2022 08:06:41",
+  "HeaderLastSavedDateTimeUTC": "06/02/2022 08:48:27",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "3b1e2add-3337-498e-a5bf-a04aedf9c8b1": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/4e3e283101fe4485acccb22caafc0f84\"",
@@ -198,7 +199,9 @@
     "InformTaskAssigned": 0,
     "InformTaskCreated": 1,
     "LegendSample": 12,
-    "newMainMenuItems": 13
+    "newMainMenuItems": 13,
+    "Revenue": 15,
+    "WeekdayWork": 14
   },
   "OrderGroupControls": {
     "AddNewTask": {
@@ -267,7 +270,8 @@
     "Button3": 85,
     "Button4": 32,
     "ChangeExistingTask": 2,
-    "ColumnChart1": 144,
+    "ColumnChart1": 147,
+    "ColumnChart4": 143,
     "Components.Metrics": 0,
     "Components.Metrics_1": 138,
     "Context": 31,
@@ -329,8 +333,8 @@
     "Header_1": 87,
     "Header_2": 135,
     "HtmlText1": 139,
-    "HtmlText1_1": 143,
-    "HtmlText1_2": 147,
+    "HtmlText1_1": 146,
+    "HtmlText1_2": 151,
     "Icon1": 83,
     "Icon2": 137,
     "Icon3": 23,
@@ -349,12 +353,12 @@
     "Label1": 8,
     "Label3": 4,
     "Label4": 79,
-    "Label5": 141,
-    "Label5_1": 146,
-    "Label5_2": 149,
-    "Label6": 142,
-    "Label6_1": 145,
-    "Label6_2": 148,
+    "Label5": 144,
+    "Label5_1": 149,
+    "Label5_2": 153,
+    "Label6": 145,
+    "Label6_1": 148,
+    "Label6_2": 152,
     "Logo": 1,
     "Logo_1": 88,
     "Logo_2": 136,
@@ -434,7 +438,7 @@
       "typedDataCard": 15
     },
     "DeserializationLoadTime": 5.7359412,
-    "ErrorCount": 20
+    "ErrorCount": 8
   },
   "WasLocalDatabaseReferencesEmpty": false
 }
