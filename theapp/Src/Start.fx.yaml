@@ -897,7 +897,19 @@ Start As screen:
         AddNewTaskButton As button:
             Height: =49
             OnSelect: |-
-                =SubmitForm(NewTaskForm); Set(lastSubmitFromForm, NewTaskForm.LastSubmit); 'InformTaskCreated'.Run("Handle Task: " & lastSubmitFromForm.'Task Name'); Set(addTask,"no"); 'InformTaskAssigned'.Run(lastSubmitFromForm.AssignedPersonEmail); NewForm(NewTaskForm)
+                =SubmitForm(NewTaskForm);
+                
+                If(TaskTemplate.Selected.Value
+                
+                Set(lastSubmitFromForm, NewTaskForm.LastSubmit);
+                
+                'InformTaskCreated'.Run("Handle Task: " & lastSubmitFromForm.'Task Name');
+                
+                Set(addTask,"no");
+                
+                'InformTaskAssigned'.Run(lastSubmitFromForm.AssignedPersonEmail);
+                
+                NewForm(NewTaskForm)
             Size: =24
             Text: ="Add"
             Visible: =If(addTask = "yes", true, false)
@@ -942,6 +954,8 @@ Start As screen:
             =Switch(
                 ThisItem.title,
                 "Task",
+                Set(addTask, "yes"),
+                "Project",
                 Set(addTask, "yes")
             );
             UpdateContext({showMainMenu:false})
@@ -977,11 +991,12 @@ Start As screen:
             Y: =Parent.TemplateHeight - 1
             ZIndex: =5
 
-    Dropdown2 As dropdown:
+    TaskTemplate As dropdown:
         Default: ="Standard"
         Height: =58
         Items: =["Standard", "Audit 5S"]
         Size: =21
+        Visible: =If(addTask = "yes", true, false)
         Width: =575
         X: =32
         Y: =239
@@ -992,6 +1007,7 @@ Start As screen:
         Height: =62
         Size: =21
         Text: ="Template"
+        Visible: =If(addTask = "yes", true, false)
         Width: =560
         X: =32
         Y: =175
