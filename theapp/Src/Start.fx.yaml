@@ -159,14 +159,15 @@ Start As screen:
             ZIndex: =16
 
         "Gallery4 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
-            Height: =209
+            Height: =211
             Items: =TaskOptions
             Layout: =Layout.Vertical
             TemplatePadding: =0
             TemplateSize: =67
+            Visible: =If(ThisItem.TaskType = TaskTypeChoice.'5S', true, false)
             Width: =268
-            X: =239
-            Y: =45
+            X: =372
+            Y: =59
             ZIndex: =17
 
             Subtitle3 As label:
