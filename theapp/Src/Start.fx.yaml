@@ -379,11 +379,83 @@ Start As screen:
         NewTaskForm As form:
             DataSource: =HackathonSc1Tasks
             DefaultMode: =FormMode.New
-            Height: =754
+            Height: =862
             Visible: =If(addTask = "yes", true, false)
             Width: =640
-            Y: =298
+            Y: =189
             ZIndex: =15
+
+            TaskType_DataCard3 As typedDataCard.comboBoxOptionSetSingleEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="cr876_tasktype"
+                Default: =ThisItem.TaskType
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@HackathonSc1Tasks],DataSourceInfo.DisplayName,"cr876_tasktype")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =129
+                Required: =false
+                Update: =DataCardValue16.Selected.Value
+                Width: =640
+                X: =0
+                Y: =0
+                ZIndex: =1
+
+                DataCardKey18 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue16 As combobox:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    DefaultSelectedItems: =["Standard"]
+                    DisplayFields: =["Value"]
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =56
+                    IsSearchable: =false
+                    Items: =Choices(TaskTypeChoice)
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    SearchFields: =["Value"]
+                    SearchItems: =[]
+                    SelectMultiple: =false
+                    Size: =21
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey18.Y + DataCardKey18.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage18 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =24
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue16.Y + DataCardValue16.Height
+                    ZIndex: =3
+
+                StarVisible18 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey18.Height
+                    Size: =21
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey18.Y
+                    ZIndex: =4
 
             Asset_DataCard1 As typedDataCard.textualEditCard:
                 BorderStyle: =BorderStyle.Solid
@@ -398,7 +470,7 @@ Start As screen:
                 Update: =DataCardValue3.Text
                 Width: =640
                 X: =0
-                Y: =1
+                Y: =2
                 ZIndex: =1
 
                 DataCardKey3 As label:
@@ -471,7 +543,7 @@ Start As screen:
                 Update: =DataCardValue4.Text
                 Width: =640
                 X: =0
-                Y: =2
+                Y: =3
                 ZIndex: =1
 
                 DataCardKey4 As label:
@@ -543,7 +615,7 @@ Start As screen:
                 Update: =Image1.Image
                 Width: =640
                 X: =0
-                Y: =3
+                Y: =4
                 ZIndex: =1
 
                 DataCardKey5 As label:
@@ -616,7 +688,7 @@ Start As screen:
                 Update: =DataCardValue5.Selected.Value
                 Width: =640
                 X: =0
-                Y: =4
+                Y: =5
                 ZIndex: =1
 
                 DataCardKey6 As label:
@@ -688,7 +760,7 @@ Start As screen:
                 Update: =Value(DataCardValue6.Text)
                 Width: =640
                 X: =0
-                Y: =5
+                Y: =6
                 ZIndex: =1
 
                 DataCardKey7 As label:
@@ -761,7 +833,7 @@ Start As screen:
                 Update: =DataCardValue2.Text
                 Width: =640
                 X: =0
-                Y: =6
+                Y: =7
                 ZIndex: =1
 
                 DataCardKey2 As label:
@@ -828,13 +900,13 @@ Start As screen:
                 DisplayMode: =Parent.DisplayMode
                 DisplayName: =DataSourceInfo([@HackathonSc1Tasks],DataSourceInfo.DisplayName,"cr876_hacksc1task")
                 Fill: =RGBA(0, 0, 0, 0)
-                Height: =110
+                Height: =120
                 MaxLength: =DataSourceInfo([@HackathonSc1Tasks], DataSourceInfo.MaxLength, "cr876_hacksc1task")
                 Required: =true
                 Update: =DataCardValue1.Text
                 Width: =640
                 X: =0
-                Y: =0
+                Y: =1
                 ZIndex: =20
 
                 DataCardKey1 As label:
@@ -845,7 +917,7 @@ Start As screen:
                     Width: =Parent.Width - 60
                     Wrap: =false
                     X: =30
-                    Y: =57
+                    Y: =14
                     ZIndex: =1
 
                 DataCardValue1 As text:
@@ -864,7 +936,7 @@ Start As screen:
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey1.Y + DataCardKey1.Height + 5
+                    Y: =71
                     ZIndex: =2
 
                 ErrorMessage1 As label:
@@ -951,7 +1023,9 @@ Start As screen:
         Items: =newMainMenuItems
         Layout: =Layout.Vertical
         OnSelect: |-
-            =Switch(
+            =ResetForm(NewTaskForm);
+            
+            Switch(
                 ThisItem.title,
                 "Task",
                 Set(addTask, "yes"),
@@ -990,26 +1064,4 @@ Start As screen:
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - 1
             ZIndex: =5
-
-    TaskTemplate As dropdown:
-        Default: ="Standard"
-        Height: =58
-        Items: =["Standard", "Audit 5S"]
-        Size: =21
-        Visible: =If(addTask = "yes", true, false)
-        Width: =575
-        X: =32
-        Y: =239
-        ZIndex: =27
-
-    Label2 As label:
-        Color: =RGBA(0, 18, 107, 1)
-        Height: =62
-        Size: =21
-        Text: ="Template"
-        Visible: =If(addTask = "yes", true, false)
-        Width: =560
-        X: =32
-        Y: =175
-        ZIndex: =28
 

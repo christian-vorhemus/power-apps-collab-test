@@ -35,6 +35,7 @@
       "cr876_shift": "Shift",
       "cr876_startedon": "Started On",
       "cr876_taskstatus": "TaskStatus",
+      "cr876_tasktype": "TaskType",
       "createdby": "Created By",
       "createdon": "Created On",
       "createdonbehalfby": "Created By (Delegate)",
@@ -127,6 +128,27 @@
     },
     "OptionSetTypeKey": "PicklistType",
     "RelatedColumnInvariantName": "cr876_role",
+    "RelatedEntityName": "HackathonSc1Tasks",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "TaskTypeChoice",
+    "Name": "cr876_tasktypechoice",
+    "OptionSetInfoNameMapping": {
+      "0": "Standard",
+      "1": "5S",
+      "2": "Kaizen"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr876_tasktype",
+        "OptionSetReferenceEntityName": "HackathonSc1Tasks"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cr876_tasktype",
     "RelatedEntityName": "HackathonSc1Tasks",
     "Type": "OptionSetInfo"
   }
