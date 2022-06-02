@@ -23,7 +23,7 @@
         Text: =CountIf(HackathonSc1Tasks, TaskStatus = "Active")
         Width: =178
         X: =417
-        Y: =113
+        Y: =87
         ZIndex: =2
 
     Label6 As label:
@@ -32,8 +32,8 @@
         Size: =18
         Text: ="Open tasks"
         Width: =192
-        X: =440
-        Y: =113
+        X: =429
+        Y: =87
         ZIndex: =3
 
     PowerBI1 As powerbi:

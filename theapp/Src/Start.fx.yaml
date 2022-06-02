@@ -154,20 +154,49 @@ Start As screen:
                 =Navigate(ChangeExistingTask, ScreenTransition.Fade,{selectedItemFromStartScreen: TaskList.Selected})
             Text: ="Edit"
             Width: =56
-            X: =572
+            X: =561
             Y: =225
             ZIndex: =16
 
-        Checkbox3 As checkbox:
-            Height: =61
-            OnSelect: =Select(Parent)
-            Size: =21
-            Text: ="Option"
-            Visible: =If(ThisItem.TaskType = TaskTypeChoice.'5S', true, true)
-            Width: =208
-            X: =250
-            Y: =164
+        "Gallery4 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+            Height: =209
+            Items: =CustomGallerySample
+            Layout: =Layout.Vertical
+            TemplatePadding: =0
+            TemplateSize: =67
+            Width: =268
+            X: =239
+            Y: =45
             ZIndex: =17
+
+            Subtitle3 As label:
+                Height: =Self.Size * 1.8
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.SampleText
+                VerticalAlign: =VerticalAlign.Top
+                Width: =Title4.Width
+                X: =Title4.X
+                Y: =Title4.Y + Title4.Height + 4
+                ZIndex: =3
+
+            Separator5 As rectangle:
+                Height: =0
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth
+                Y: =Parent.TemplateHeight - 1
+                ZIndex: =5
+
+            Checkbox5 As checkbox:
+                Height: =70
+                OnSelect: =Select(Parent)
+                Size: =21
+                Text: ="Option"
+                Width: =191
+                ZIndex: =6
 
     ImageGroup As group:
         Height: =5
@@ -1144,7 +1173,7 @@ Start As screen:
         Visible: =showMainMenu
         Width: =364
         X: =267
-        Y: =144
+        Y: =149
         ZIndex: =26
 
         Title1 As label:
