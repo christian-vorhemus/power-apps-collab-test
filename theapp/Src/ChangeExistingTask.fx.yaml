@@ -609,11 +609,26 @@ ChangeExistingTask As screen:
                 ZIndex: =4
 
     Button1 As button:
-        OnSelect: =Navigate(Start); Patch(HackathonSc1Tasks, Form1.);
+        OnSelect: |
+            =Navigate(Start);
+            Patch(
+                HackathonSc1Tasks,
+                selectedItemFromStartScreen,
+                {
+                    Asset: DataCardValue9.Text,
+                    'Task Name': DataCardValue7.Text,
+                    ContextImage: DataCardValue11.Text,
+                    Shift: Value(DataCardValue13.Text),
+                    ImageFixedState: {
+                        FileName: First(DataCardValue14.Attachments).Name,
+                        Value: First(DataCardValue14.Attachments).Value
+                    }
+                }
+            );
         Size: =24
         Text: ="Update"
         Width: =151
-        X: =34
+        X: =244
         Y: =1090
         ZIndex: =4
 
@@ -625,26 +640,4 @@ ChangeExistingTask As screen:
         X: =600
         Y: =95
         ZIndex: =5
-
-    Button1_1 As button:
-        Fill: =RGBA(141, 198, 63, 1)
-        OnSelect: |-
-            =Navigate(Start); Patch(HackathonSc1Tasks, selectedItemFromStartScreen, { TaskStatus: "Inactive"  });
-            Patch(HackathonSc1Tasks, selectedItemFromStartScreen, { 'Completed On': Now() });
-        Size: =24
-        Text: ="Mark as Done"
-        Width: =242
-        X: =358
-        Y: =1090
-        ZIndex: =6
-
-    Button1_2 As button:
-        OnSelect: |-
-            =Patch(HackathonSc1Tasks, selectedItemFromStartScreen, { 'Started On': Now() });
-        Size: =24
-        Text: ="Start"
-        Width: =122
-        X: =210
-        Y: =1090
-        ZIndex: =7
 

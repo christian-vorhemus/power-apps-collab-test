@@ -3,8 +3,22 @@
     "Components.Metrics_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        "Fill",
-        "Height",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "RGBA(0, 0, 0, 0)",
+          "InvariantPropertyName": "Fill",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Height",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Width",
         "X",
         "Y",
@@ -365,18 +379,11 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "Icon2": {
+    "Icon7": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Icon",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Color",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Color",
         "DisabledColor",
         "PressedColor",
         "HoverColor",
@@ -416,7 +423,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Icon2",
+      "Name": "Icon7",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [

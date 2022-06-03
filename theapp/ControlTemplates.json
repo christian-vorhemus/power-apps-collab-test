@@ -69,19 +69,19 @@
     "OverridableProperties": {},
     "Version": "2.2.0"
   },
-  "checkbox": {
+  "camera": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/checkbox",
+    "Id": "http://microsoft.com/appmagic/camera",
     "IsComponentTemplate": false,
     "IsCustomGroupControlTemplate": false,
     "IsPcfControl": false,
     "IsPremiumPcfControl": false,
     "IsWidgetTemplate": true,
     "LastModifiedTimestamp": "0",
-    "Name": "checkbox",
+    "Name": "camera",
     "OverridableProperties": {},
-    "Version": "2.1.0"
+    "Version": "2.4.0"
   },
   "combobox": {
     "CustomGroupControlTemplateName": "",

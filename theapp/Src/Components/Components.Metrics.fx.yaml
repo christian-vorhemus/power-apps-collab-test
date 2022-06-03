@@ -10,9 +10,10 @@
     HtmlText1 As htmlViewer:
         Height: =383
         HtmlText: |
-            ="<div style='margin:10px;width:330px;height:310px;background-color:#;box-shadow:0 3px 6px 1px  #ccc; border-radius:5px'></div>"
+            ="<div style='margin:10px;width:330px;height:330px;background-color:#;box-shadow:0 3px 6px 1px  #ccc; border-radius:5px'></div>"
         Width: =560
         X: =15
+        Y: =20
         ZIndex: =1
 
     Label5 As label:
@@ -23,7 +24,7 @@
         Text: =CountIf(HackathonSc1Tasks, TaskStatus = "Active")
         Width: =178
         X: =417
-        Y: =87
+        Y: =113
         ZIndex: =2
 
     Label6 As label:
@@ -32,29 +33,29 @@
         Size: =18
         Text: ="Open tasks"
         Width: =192
-        X: =429
-        Y: =87
+        X: =440
+        Y: =113
         ZIndex: =3
 
     PowerBI1 As powerbi:
         BorderThickness: =0
         DashboardId: ="b48f2bb2-ad71-4dd0-8cba-a5f496bb67e5"
-        Height: =301
+        Height: =320
         TileUrl: |-
             ="https://msit.powerbi.com/embed?dashboardId=b48f2bb2-ad71-4dd0-8cba-a5f496bb67e5&tileId=42d6542b-fac4-4b51-986f-57d59f44182f&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9ERi1NU0lULVNDVVMtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQiLCJlbWJlZEZlYXR1cmVzIjp7Im1vZGVybkVtYmVkIjpmYWxzZX19"
         Width: =330
         WorkspaceId: ="__my-workspace"
-        X: =33
-        Y: =21
+        X: =30
+        Y: =40
         ZIndex: =4
 
     HtmlText1_1 As htmlViewer:
         Height: =383
         HtmlText: |
-            ="<div style='margin:10px;width:330px;height:310px;background-color:#;box-shadow:0 3px 6px 1px  #ccc; border-radius:5px'></div>"
+            ="<div style='margin:10px;width:330px;height:330px;background-color:#;box-shadow:0 3px 6px 1px  #ccc; border-radius:5px'></div>"
         Width: =560
         X: =15
-        Y: =341
+        Y: =391
         ZIndex: =5
 
     Label6_1 As label:
@@ -65,7 +66,7 @@
         Text: ="Mean time to repair (days)"
         Width: =192
         X: =417
-        Y: =408
+        Y: =471
         ZIndex: =6
 
     Label5_1 As label:
@@ -76,7 +77,7 @@
         Text: =Round(Average(Filter(HackathonSc1Tasks, TaskStatus = "Inactive"), DateDiff(createdon, cr876_completedon, "Days")), 2)
         Width: =277
         X: =363
-        Y: =418
+        Y: =503
         ZIndex: =7
 
     ColumnChart1 As barChart:
@@ -95,16 +96,16 @@
                  }
                )
             )
-        Y: =370
+        Y: =414
         ZIndex: =8
 
     HtmlText1_2 As htmlViewer:
-        Height: =341
+        Height: =261
         HtmlText: |
-            ="<div style='margin:10px;width:330px;height:310px;background-color:#;box-shadow:0 3px 6px 1px  #ccc; border-radius:5px'></div>"
+            ="<div style='margin:10px;width:580px;height:230px;background-color:#;box-shadow:0 3px 6px 1px  #ccc; border-radius:5px'></div>"
         Width: =625
         X: =15
-        Y: =683
+        Y: =763
         ZIndex: =9
 
     Label6_2 As label:
@@ -114,24 +115,6 @@
         Text: ="Hours worked this week"
         Width: =192
         X: =417
-        Y: =751
+        Y: =788
         ZIndex: =10
-
-    Label5_2 As label:
-        Align: =Align.Center
-        FontWeight: =FontWeight.Bold
-        Height: =228
-        Size: =82
-        Text: =Round(Average(Filter(HackathonSc1Tasks, TaskStatus = "Inactive", Year('Completed On') = Year(Now()), WeekNum('Completed On') = WeekNum(Now())), DateDiff(cr876_startedon, cr876_completedon, "Hours")), 2)
-        Width: =277
-        X: =363
-        Y: =760
-        ZIndex: =11
-
-    ColumnChart4 As barChart:
-        Height: =335
-        ItemColorSet: =[RGBA(48,166,103, 1),RGBA(49, 130, 93, 1), RGBA(94,193,108,1), RGBA(48,166,103, 1), RGBA(94,193,108,1), RGBA(246,143,100,1), RGBA(247,180,91,1)]
-        Items: =WeekdayWork
-        Y: =687
-        ZIndex: =14
 

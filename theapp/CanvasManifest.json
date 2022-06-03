@@ -7,7 +7,7 @@
   },
   "Properties": {
     "AppCreationSource": "AppFromScratch",
-    "AppDescription": "",
+    "AppDescription": "Version before changing \"edit task\" from \"upload fixed task\" to \"take photo wit camera of fixed task\"",
     "AppPreviewFlagsMap": {
       "aibuilderserviceenrollment": true,
       "allowmultiplescreensincanvaspages": false,
@@ -18,7 +18,7 @@
       "cdsdataformatting": false,
       "classiccontrols": false,
       "componentauthoring": true,
-      "copyandmerge": true,
+      "copyandmerge": false,
       "datatablev2control": true,
       "delaycontrolrendering": false,
       "delayloadscreens": true,
@@ -81,7 +81,7 @@
     "DocumentType": "App",
     "EnableInstrumentation": false,
     "FileID": "38571dd8-8e6e-449c-aac1-b72a722c32ff",
-    "Id": "a5d1a725-115a-4131-b1b6-fd33003e7d2d",
+    "Id": "40e42b42-9fce-4ec4-b715-50292d2be362",
     "InstrumentationKey": "",
     "Name": "HackathonScenario1",
     "OriginatingVersion": "1.324"
@@ -100,6 +100,7 @@
   "ScreenOrder": [
     "Start",
     "ChangeExistingTask",
-    "Metrics"
+    "Metrics",
+    "Mytasks"
   ]
 }
