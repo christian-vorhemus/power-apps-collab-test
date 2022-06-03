@@ -1,0 +1,30 @@
+Metrics As screen:
+
+    "'Components.Metrics_1' As 'Components.Metrics'":
+        Y: =110
+
+    Header_2 As label:
+        Align: =Align.Center
+        Fill: =RGBA(204, 204, 204, 1)
+        Font: =Font.'Segoe UI'
+        Height: =90
+        Size: =40
+        Text: =""
+        Width: =640
+        ZIndex: =2
+
+    Logo_2 As image:
+        Height: =74
+        Image: ='MS-PowerPlatform_logo_stacked_c-white_rgb'
+        Width: =390
+        X: =Header_2.X
+        Y: =10
+        ZIndex: =3
+
+    Icon7 As icon.ArrowLeft:
+        Icon: =Icon.ArrowLeft
+        OnSelect: =Navigate(Start, ScreenTransition.Fade)
+        X: =548
+        Y: =13
+        ZIndex: =4
+

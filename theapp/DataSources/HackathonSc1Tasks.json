@@ -1,0 +1,156 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr876_hackathonsc1taskses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr876_hackathonsc1tasks",
+    "MaxGetRowsCount": 500,
+    "Name": "HackathonSc1Tasks",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "{Attachments}": "Attachments",
+      "cr876_asset": "Asset",
+      "cr876_assignedpersonemail": "AssignedPersonEmail",
+      "cr876_completedon": "Completed On",
+      "cr876_contextimage": "ContextImage",
+      "cr876_hackathonsc1tasks_Annotations": "Notes",
+      "cr876_hackathonsc1tasks_AsyncOperations": "System Jobs",
+      "cr876_hackathonsc1tasks_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr876_hackathonsc1tasks_DuplicateBaseRecord": "Duplicate Records (cr876_hackathonsc1tasks_DuplicateBaseRecord)",
+      "cr876_hackathonsc1tasks_DuplicateMatchingRecord": "Duplicate Records (cr876_hackathonsc1tasks_DuplicateMatchingRecord)",
+      "cr876_hackathonsc1tasks_FileAttachments": "FileAttachments",
+      "cr876_hackathonsc1tasks_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr876_hackathonsc1tasks_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr876_hackathonsc1tasks_ProcessSession": "Process Sessions",
+      "cr876_hackathonsc1tasks_SyncErrors": "Sync Errors",
+      "cr876_hackathonsc1tasksid": "HackathonSc1Tasks",
+      "cr876_hacksc1task": "Task Name",
+      "cr876_image": "Image",
+      "cr876_imagefixedstate": "ImageFixedState",
+      "cr876_imageid": "cr876_ImageId",
+      "cr876_mastertask": "MasterTask",
+      "cr876_role": "Role",
+      "cr876_shift": "Shift",
+      "cr876_startedon": "Started On",
+      "cr876_taskstatus": "TaskStatus",
+      "cr876_tasktype": "TaskType",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "HackathonSc1Tasks",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "HackathonSc1Tasks (Views)",
+    "Name": "_cr876_hackathonsc1tasks_views",
+    "RelatedEntityName": "HackathonSc1Tasks",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "109e98f0-57eb-45bc-aa83-398cdab0094c": "HackathonSc1Tasks Lookup View",
+      "5c3c8294-258b-44f6-9e96-641fdf45b91a": "HackathonSc1Tasks Associated View",
+      "ac201f48-d5e0-4ea8-9f20-630bfd7259d6": "Active HackathonSc1Tasks",
+      "bdc3fe0f-9883-4f5e-9fd4-e38af89b442a": "Inactive HackathonSc1Tasks",
+      "c7a60a85-58b9-4f08-8f22-475e7a406164": "HackathonSc1Tasks Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (HackathonSc1Tasks)",
+    "Name": "cr876_hackathonsc1tasks_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "HackathonSc1Tasks"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "HackathonSc1Tasks",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (HackathonSc1Tasks)",
+    "Name": "cr876_hackathonsc1tasks_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive",
+      "3": "Done"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "HackathonSc1Tasks"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "HackathonSc1Tasks",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Roles",
+    "Name": "cr876_maintenancetechnician",
+    "OptionSetInfoNameMapping": {
+      "502810000": "Maintenance Technician",
+      "502810001": "Operator"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr876_role",
+        "OptionSetReferenceEntityName": "HackathonSc1Tasks"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cr876_role",
+    "RelatedEntityName": "HackathonSc1Tasks",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "TaskTypeChoice",
+    "Name": "cr876_tasktypechoice",
+    "OptionSetInfoNameMapping": {
+      "0": "Standard",
+      "1": "5S",
+      "2": "Kaizen",
+      "3": "Subtask"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr876_tasktype",
+        "OptionSetReferenceEntityName": "HackathonSc1Tasks"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cr876_tasktype",
+    "RelatedEntityName": "HackathonSc1Tasks",
+    "Type": "OptionSetInfo"
+  }
+]

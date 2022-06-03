@@ -1,0 +1,120 @@
+"'Components.Metrics' As CanvasComponent":
+    Fill: =
+    Height: =1024
+    OnReset: =
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    HtmlText1 As htmlViewer:
+        Height: =383
+        HtmlText: |
+            ="<div style='margin:10px;width:330px;height:330px;background-color:#;box-shadow:0 3px 6px 1px  #ccc; border-radius:5px'></div>"
+        Width: =560
+        X: =15
+        Y: =20
+        ZIndex: =1
+
+    Label5 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Bold
+        Height: =228
+        Size: =82
+        Text: =CountIf(HackathonSc1Tasks, TaskStatus = "Active")
+        Width: =178
+        X: =417
+        Y: =113
+        ZIndex: =2
+
+    Label6 As label:
+        Color: =RGBA(116, 116, 116, 1)
+        Height: =70
+        Size: =18
+        Text: ="Open tasks"
+        Width: =192
+        X: =440
+        Y: =113
+        ZIndex: =3
+
+    PowerBI1 As powerbi:
+        BorderThickness: =0
+        DashboardId: ="b48f2bb2-ad71-4dd0-8cba-a5f496bb67e5"
+        Height: =320
+        TileUrl: |-
+            ="https://msit.powerbi.com/embed?dashboardId=b48f2bb2-ad71-4dd0-8cba-a5f496bb67e5&tileId=42d6542b-fac4-4b51-986f-57d59f44182f&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9ERi1NU0lULVNDVVMtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQiLCJlbWJlZEZlYXR1cmVzIjp7Im1vZGVybkVtYmVkIjpmYWxzZX19"
+        Width: =330
+        WorkspaceId: ="__my-workspace"
+        X: =30
+        Y: =40
+        ZIndex: =4
+
+    HtmlText1_1 As htmlViewer:
+        Height: =383
+        HtmlText: |
+            ="<div style='margin:10px;width:330px;height:330px;background-color:#;box-shadow:0 3px 6px 1px  #ccc; border-radius:5px'></div>"
+        Width: =560
+        X: =15
+        Y: =391
+        ZIndex: =5
+
+    Label6_1 As label:
+        Align: =Align.Center
+        Color: =RGBA(116, 116, 116, 1)
+        Height: =70
+        Size: =18
+        Text: ="Mean time to repair (days)"
+        Width: =192
+        X: =417
+        Y: =471
+        ZIndex: =6
+
+    Label5_1 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Bold
+        Height: =228
+        Size: =82
+        Text: =Round(Average(Filter(HackathonSc1Tasks, TaskStatus = "Inactive"), DateDiff(createdon, cr876_completedon, "Days")), 2)
+        Width: =277
+        X: =363
+        Y: =503
+        ZIndex: =7
+
+    ColumnChart1 As barChart:
+        Height: =317
+        Items: |-
+            =ForAll(GroupBy(ForAll(ShowColumns(Filter(HackathonSc1Tasks, TaskStatus = "Inactive", Year('Completed On') = Year(Now())), "cr876_completedon", "createdon"),
+            With({},
+                 {WeekNumber:WeekNum(cr876_completedon),
+                  MTR:DateDiff(createdon, cr876_completedon, "Days")
+                 }
+               )
+            ), "WeekNumber", "MTRs" ),
+            With({},
+                 {WeekNumber:WeekNumber,
+                  MTR:Average(MTRs, MTR)
+                 }
+               )
+            )
+        Y: =414
+        ZIndex: =8
+
+    HtmlText1_2 As htmlViewer:
+        Height: =261
+        HtmlText: |
+            ="<div style='margin:10px;width:580px;height:230px;background-color:#;box-shadow:0 3px 6px 1px  #ccc; border-radius:5px'></div>"
+        Width: =625
+        X: =15
+        Y: =763
+        ZIndex: =9
+
+    Label6_2 As label:
+        Color: =RGBA(116, 116, 116, 1)
+        Height: =70
+        Size: =18
+        Text: ="Hours worked this week"
+        Width: =192
+        X: =417
+        Y: =788
+        ZIndex: =10
+
