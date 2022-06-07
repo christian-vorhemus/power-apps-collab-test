@@ -130,8 +130,25 @@
 
     ColumnChart4 As barChart:
         Height: =335
-        ItemColorSet: =ItemColors
+        ItemColorSet: =[RGBA(48,166,103, 1),RGBA(49, 130, 93, 1), RGBA(94,193,108,1), RGBA(48,166,103, 1), RGBA(94,193,108,1), RGBA(246,143,100,1), RGBA(247,180,91,1)]
         Items: =WeekdayWork
         Y: =687
         ZIndex: =14
+
+    Label2 As label:
+        Height: =70
+        Size: =21
+        Text: |-
+            =With({year:Year(Now()) , weekNo: WeekNum(Now())},
+                  With({weekDate: DateAdd(Date(year,1,1), 7* weekNo)},
+                       DateAdd(weekDate,
+                               -(Weekday(weekDate)),
+                              Days
+                       )
+                  )
+            )
+        Width: =560
+        X: =47
+        Y: =73
+        ZIndex: =15
 

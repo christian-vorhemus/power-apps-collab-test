@@ -112,6 +112,7 @@
     "ImageFixedState_DataCard1": 57,
     "ImageGroup": 165,
     "Label1": 77,
+    "Label2": 168,
     "Label3": 75,
     "Label4": 157,
     "Label5": 6,
@@ -173,7 +174,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "06/07/2022 13:27:18",
+  "HeaderLastSavedDateTimeUTC": "06/07/2022 19:08:17",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "3b1e2add-3337-498e-a5bf-a04aedf9c8b1": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/4e3e283101fe4485acccb22caafc0f84\"",
@@ -186,8 +187,8 @@
     "MS-PowerPlatform_logo_stacked_c-white_rgb": "0002.png"
   },
   "LocalResourceRootPaths": {
-    "MS-PowerPlatform_logo_stacked_c-gray_rgb": "https://docserverpwaprodweu.blob.core.windows.net/d44735e0-1255-424d-b0a8-f5a10b1bc145-1/resource/Assets0Images00001.png?sv=2017-04-17&sr=b&sig=pDCfbBy2wA9gfe1A7sPyaTi5IqlrQm3TWaINdjqEXsA%3D&spr=https&se=2022-06-08T09%3A43%3A45Z&sp=r",
-    "MS-PowerPlatform_logo_stacked_c-white_rgb": "https://docserverpwaprodweu.blob.core.windows.net/d44735e0-1255-424d-b0a8-f5a10b1bc145-1/resource/Assets0Images00002.png?sv=2017-04-17&sr=b&sig=hjb%2BTW2PSzaxa1wjhAqd25FF20HgU%2BdGjLCrm38BPMk%3D&spr=https&se=2022-06-08T09%3A43%3A45Z&sp=r"
+    "MS-PowerPlatform_logo_stacked_c-gray_rgb": "https://docserverpwaprodweu.blob.core.windows.net/2177f135-07ef-4ce6-909b-07b6bc33b71c-1/resource/Assets0Images00001.png?sv=2017-04-17&sr=b&sig=bllKDiFobEhoh2PrjNYpWFLtznZxcQ9EKqHEo%2Fnp%2B8s%3D&spr=https&se=2022-06-08T13%3A43%3A46Z&sp=r",
+    "MS-PowerPlatform_logo_stacked_c-white_rgb": "https://docserverpwaprodweu.blob.core.windows.net/2177f135-07ef-4ce6-909b-07b6bc33b71c-1/resource/Assets0Images00002.png?sv=2017-04-17&sr=b&sig=lC1O1OUXS3WZITMzJwLLQaw5GTbfZWvuo1t8xbL8ntQ%3D&spr=https&se=2022-06-08T13%3A43%3A46Z&sp=r"
   },
   "OrderComponentMetadata": {
     "8c8f8dc79ac34241a13c1c0b61030b6a": 0
@@ -284,8 +285,8 @@
     "Button4": 37,
     "ChangeExistingTask": 2,
     "Checkbox5": 29,
-    "ColumnChart1": 154,
-    "ColumnChart4": 158,
+    "ColumnChart1": 155,
+    "ColumnChart4": 159,
     "Components.Metrics": 0,
     "Components.Metrics_1": 148,
     "Context": 36,
@@ -352,8 +353,8 @@
     "Header_1": 97,
     "Header_2": 145,
     "HtmlText1": 149,
-    "HtmlText1_1": 153,
-    "HtmlText1_2": 157,
+    "HtmlText1_1": 154,
+    "HtmlText1_2": 158,
     "Icon1": 93,
     "Icon2": 147,
     "Icon3": 23,
@@ -370,14 +371,15 @@
     "ImageFixedState_DataCard1": 137,
     "ImageGroup": 5,
     "Label1": 8,
+    "Label2": 151,
     "Label3": 4,
     "Label4": 89,
-    "Label5": 151,
-    "Label5_1": 156,
-    "Label5_2": 160,
-    "Label6": 152,
-    "Label6_1": 155,
-    "Label6_2": 159,
+    "Label5": 152,
+    "Label5_1": 157,
+    "Label5_2": 161,
+    "Label6": 153,
+    "Label6_1": 156,
+    "Label6_2": 160,
     "Logo": 1,
     "Logo_1": 98,
     "Logo_2": 146,
@@ -437,7 +439,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 1.6363891,
+    "AnalysisLoadTime": 1.5186074,
     "ControlCount": {
       "8c8f8dc79ac34241a13c1c0b61030b6a": 2,
       "addMedia": 2,
@@ -461,7 +463,7 @@
       "text": 15,
       "typedDataCard": 17
     },
-    "DeserializationLoadTime": 2.7692124,
+    "DeserializationLoadTime": 2.7149588,
     "ErrorCount": 16
   },
   "WasLocalDatabaseReferencesEmpty": false
