@@ -10,4 +10,6 @@ App As appinfo:
         ClearCollect(WeekdayWork, { Weekday: "Mon", Hours: 7.5 }, { Weekday: "Tue", Hours: 9.5 }, { Weekday: "Wed", Hours: 6 }, { Weekday: "Thu", Hours: 7.5 }, { Weekday: "Fri", Hours: 6 }, { Weekday: "Sat", Hours: 3 }, { Weekday: "Sun", Hours: 4.5 } );
         
         Collect(TaskOptions, {Option:"Task 1"}, {Option:"Task 2"},{Option:"Task 3"});
+        
+        Collect(ItemColors, [Color.Green,Color.Green,Color.Green, RGBA(48,166,103, 1), RGBA(94,193,108,1), RGBA(246,143,100,1), RGBA(247,180,91,1)])
 

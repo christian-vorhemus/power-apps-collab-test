@@ -130,7 +130,7 @@
 
     ColumnChart4 As barChart:
         Height: =335
-        ItemColorSet: =[RGBA(48,166,103, 1),RGBA(49, 130, 93, 1), RGBA(94,193,108,1), RGBA(48,166,103, 1), RGBA(94,193,108,1), RGBA(246,143,100,1), RGBA(247,180,91,1)]
+        ItemColorSet: =ItemColors
         Items: =WeekdayWork
         Y: =687
         ZIndex: =14

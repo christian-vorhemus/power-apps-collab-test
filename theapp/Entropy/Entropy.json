@@ -173,7 +173,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "06/03/2022 09:48:36",
+  "HeaderLastSavedDateTimeUTC": "06/07/2022 13:27:18",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "3b1e2add-3337-498e-a5bf-a04aedf9c8b1": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/4e3e283101fe4485acccb22caafc0f84\"",
@@ -186,8 +186,8 @@
     "MS-PowerPlatform_logo_stacked_c-white_rgb": "0002.png"
   },
   "LocalResourceRootPaths": {
-    "MS-PowerPlatform_logo_stacked_c-gray_rgb": "https://docserverpwaprodneu.blob.core.windows.net/cd4c5191-a5b2-4582-9a5f-c8635b73f5b5-1/resource/Assets0Images00001.png?sv=2017-04-17&sr=b&sig=uwl0MX%2FmYzsHxrAk9qt8zIY3A3GbumWqY4gneTjNBZ4%3D&spr=https&se=2022-06-04T10%3A02%3A23Z&sp=r",
-    "MS-PowerPlatform_logo_stacked_c-white_rgb": "https://docserverpwaprodneu.blob.core.windows.net/cd4c5191-a5b2-4582-9a5f-c8635b73f5b5-1/resource/Assets0Images00002.png?sv=2017-04-17&sr=b&sig=xXuhim2ywjq4aI1XwuXlrrlmL%2BD9%2B9MGbo%2BOiS0H8nI%3D&spr=https&se=2022-06-04T10%3A02%3A23Z&sp=r"
+    "MS-PowerPlatform_logo_stacked_c-gray_rgb": "https://docserverpwaprodweu.blob.core.windows.net/d44735e0-1255-424d-b0a8-f5a10b1bc145-1/resource/Assets0Images00001.png?sv=2017-04-17&sr=b&sig=pDCfbBy2wA9gfe1A7sPyaTi5IqlrQm3TWaINdjqEXsA%3D&spr=https&se=2022-06-08T09%3A43%3A45Z&sp=r",
+    "MS-PowerPlatform_logo_stacked_c-white_rgb": "https://docserverpwaprodweu.blob.core.windows.net/d44735e0-1255-424d-b0a8-f5a10b1bc145-1/resource/Assets0Images00002.png?sv=2017-04-17&sr=b&sig=hjb%2BTW2PSzaxa1wjhAqd25FF20HgU%2BdGjLCrm38BPMk%3D&spr=https&se=2022-06-08T09%3A43%3A45Z&sp=r"
   },
   "OrderComponentMetadata": {
     "8c8f8dc79ac34241a13c1c0b61030b6a": 0
@@ -208,6 +208,7 @@
     "HackathonSc1Tasks\\default.cds_cr876_hackathonsc1tasks_views": 6,
     "InformTaskAssigned": 0,
     "InformTaskAssigned_1": 1,
+    "ItemColors": 17,
     "LegendSample": 12,
     "ListboxSample": 13,
     "newMainMenuItems": 14,
@@ -436,7 +437,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 1.4501882,
+    "AnalysisLoadTime": 1.6363891,
     "ControlCount": {
       "8c8f8dc79ac34241a13c1c0b61030b6a": 2,
       "addMedia": 2,
@@ -460,7 +461,7 @@
       "text": 15,
       "typedDataCard": 17
     },
-    "DeserializationLoadTime": 2.6686967,
+    "DeserializationLoadTime": 2.7692124,
     "ErrorCount": 16
   },
   "WasLocalDatabaseReferencesEmpty": false

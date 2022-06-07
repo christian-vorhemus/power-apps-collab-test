@@ -2213,7 +2213,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "[RGBA(48,166,103, 1),RGBA(49, 130, 93, 1), RGBA(94,193,108,1), RGBA(48,166,103, 1), RGBA(94,193,108,1), RGBA(246,143,100,1), RGBA(247,180,91,1)]",
+            "InvariantScript": "ItemColors",
             "Property": "ItemColorSet",
             "RuleProviderType": "Unknown"
           },
@@ -3036,7 +3036,7 @@
       "ZIndex",
       "OnReset"
     ],
-    "LastModifiedTimestamp": "637898464437819340",
+    "LastModifiedTimestamp": "637902042507004402",
     "Name": "Components.Metrics",
     "Rules": [
       {
@@ -3101,7 +3101,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637898464437819340",
+  "LastModifiedTimestamp": "637902042507004402",
   "Name": "8c8f8dc79ac34241a13c1c0b61030b6a",
   "OverridableProperties": {},
   "Version": "637895891164101251"
