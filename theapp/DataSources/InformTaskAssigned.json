@@ -1,7 +1,7 @@
 [
   {
     "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
-    "FlowNameId": "73f16469-29e2-4c6c-a596-ca2ac98f9fc2",
+    "FlowNameId": "693bbcef-f97e-49f7-b453-254f1b89b5a8",
     "Name": "InformTaskAssigned",
     "ServiceKind": "ConnectedWadl",
     "Type": "ServiceInfo",

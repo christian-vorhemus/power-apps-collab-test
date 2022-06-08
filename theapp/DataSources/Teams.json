@@ -1,8 +1,8 @@
 [
   {
     "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
-    "FlowNameId": "693bbcef-f97e-49f7-b453-254f1b89b5a8",
-    "Name": "InformTaskAssigned_1",
+    "FlowNameId": "377e09e9-4a17-4b55-9a69-94f9835bc442",
+    "Name": "Teams",
     "ServiceKind": "ConnectedWadl",
     "Type": "ServiceInfo",
     "WorkflowEntityId": null

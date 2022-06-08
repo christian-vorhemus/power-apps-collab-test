@@ -1,10 +1,12 @@
-<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://europe-002.azure-apim.net/apim/logicflows" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="InformTaskAssigned" xmlns="http://wadl.dev.java.net/2009/02">
-  <doc title="InformTaskAssigned" />
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://europe-002.azure-apim.net/apim/logicflows" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="Teams" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="Teams" />
   <grammars>
     <jsonTypes targetNamespace="https://europe-002.azure-apim.net/apim/logicflows" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
-      <string name="ManualTriggerInput_email_def" />
+      <string name="ManualTriggerInput_Postadaptivecardandwaitforaresponse_Updatemessage_def" />
+      <string name="ManualTriggerInput_Postadaptivecardandwaitforaresponse_Updatemessage_1_def" />
       <object name="ManualTriggerInput">
-        <property name="email" type="string" />
+        <property name="Postadaptivecardandwaitforaresponse_Updatemessage" type="string" />
+        <property name="Postadaptivecardandwaitforaresponse_Updatemessage_1" type="string" />
       </object>
     </jsonTypes>
   </grammars>
@@ -18,9 +20,8 @@
             <doc title="The api version" />
           </param>
           <representation mediaType="application/json">
-            <param style="plain" name="email" path="/email" type="xs:string" required="true">
-              <doc title="EmailTaskRecipient" />
-            </param>
+            <param style="plain" name="Postadaptivecardandwaitforaresponse_Updatemessage" path="/Postadaptivecardandwaitforaresponse_Updatemessage" type="xs:string" required="true" />
+            <param style="plain" name="Postadaptivecardandwaitforaresponse_Updatemessage_1" path="/Postadaptivecardandwaitforaresponse_Updatemessage_1" type="xs:string" required="true" />
           </representation>
         </request>
       </method>
