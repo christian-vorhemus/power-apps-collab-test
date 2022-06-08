@@ -135,20 +135,3 @@
         Y: =687
         ZIndex: =14
 
-    Label2 As label:
-        Height: =70
-        Size: =21
-        Text: |-
-            =With({year:Year(Now()) , weekNo: WeekNum(Now())},
-                  With({weekDate: DateAdd(Date(year,1,1), 7* weekNo)},
-                       DateAdd(weekDate,
-                               -(Weekday(weekDate)),
-                              Days
-                       )
-                  )
-            )
-        Width: =560
-        X: =47
-        Y: =73
-        ZIndex: =15
-
