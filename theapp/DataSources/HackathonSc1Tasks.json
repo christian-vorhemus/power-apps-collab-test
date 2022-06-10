@@ -124,6 +124,10 @@
       "OptionSetReferenceItem0": {
         "OptionSetReferenceColumnName": "cr876_role",
         "OptionSetReferenceEntityName": "HackathonSc1Tasks"
+      },
+      "OptionSetReferenceItem1": {
+        "OptionSetReferenceColumnName": "cr876_role",
+        "OptionSetReferenceEntityName": "LoadtestTable"
       }
     },
     "OptionSetTypeKey": "PicklistType",
@@ -146,6 +150,10 @@
       "OptionSetReferenceItem0": {
         "OptionSetReferenceColumnName": "cr876_tasktype",
         "OptionSetReferenceEntityName": "HackathonSc1Tasks"
+      },
+      "OptionSetReferenceItem1": {
+        "OptionSetReferenceColumnName": "cr876_tasktype",
+        "OptionSetReferenceEntityName": "LoadtestTable"
       }
     },
     "OptionSetTypeKey": "PicklistType",

@@ -4,7 +4,7 @@ Start As screen:
 
     "TaskList As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         Height: =966
-        Items: =Filter(HackathonSc1Tasks, TaskStatus <> "Inactive", TaskType <> TaskTypeChoice.Subtask)
+        Items: =Filter(LoadtestTable, TaskStatus <> "Inactive", TaskType <> TaskTypeChoice.Subtask)
         Layout: =Layout.Vertical
         OnSelect: |-
             =UpdateContext({showMainMenu:false})
@@ -1199,14 +1199,4 @@ Start As screen:
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - 1
             ZIndex: =5
-
-    Button5 As button:
-        Height: =70
-        OnSelect: =Teams.Run()
-        Size: =24
-        Text: ="Button"
-        Width: =280
-        X: =17
-        Y: =106
-        ZIndex: =27
 

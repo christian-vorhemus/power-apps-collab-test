@@ -6,6 +6,13 @@
       "Values": {
         "Information": "f900e3e3-4993-4743-9009-8f95ec751ad9"
       }
+    },
+    {
+      "Kind": "default.cds_cr876_loadtesttable_forms",
+      "Namespace": "LoadtestTable (Forms)",
+      "Values": {
+        "Information": "cf939065-d3fd-44bc-9773-c85abf718b97"
+      }
     }
   ]
 }

@@ -1,0 +1,107 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr876_loadtesttables",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr876_loadtesttable",
+    "Name": "LoadtestTable",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr876_asset": "Asset",
+      "cr876_assignedpersonemail": "AssignedPersonEmail",
+      "cr876_completedon": "Completed On",
+      "cr876_contextimage": "ContextImage",
+      "cr876_createdon2": "Created On 2",
+      "cr876_image": "Image",
+      "cr876_imageid": "cr876_imageId",
+      "cr876_loadtesttable_AsyncOperations": "System Jobs",
+      "cr876_loadtesttable_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr876_loadtesttable_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr876_loadtesttable_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr876_loadtesttable_ProcessSession": "Process Sessions",
+      "cr876_loadtesttable_SyncErrors": "Sync Errors",
+      "cr876_loadtesttableid": "LoadtestTable",
+      "cr876_mastertask": "Mastertask",
+      "cr876_role": "Role",
+      "cr876_shift": "Shift",
+      "cr876_startedon": "Started On",
+      "cr876_taskname": "Task Name",
+      "cr876_taskstatus": "Task Status",
+      "cr876_tasktype": "Task Type",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "LoadtestTable",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "LoadtestTable (Views)",
+    "Name": "_cr876_loadtesttable_views",
+    "RelatedEntityName": "LoadtestTable",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "06b38f86-a73b-4ae7-aac6-3fc73dd10c50": "LoadtestTable Associated View",
+      "3df23bf0-6d8b-402f-a9f6-d72abd52d0e3": "LoadtestTable Advanced Find View",
+      "509e7422-e5e8-40f6-88e2-8ee9b278baf5": "Active LoadtestTable",
+      "a559b837-3133-4d69-a5cd-eed447309c14": "Inactive LoadtestTable",
+      "c5794878-4466-4bf0-87eb-fadebc72d232": "LoadtestTable Lookup View"
+    }
+  },
+  {
+    "DisplayName": "Status (LoadtestTable)",
+    "Name": "cr876_loadtesttable_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "LoadtestTable"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "LoadtestTable",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (LoadtestTable)",
+    "Name": "cr876_loadtesttable_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "LoadtestTable"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "LoadtestTable",
+    "Type": "OptionSetInfo"
+  }
+]
