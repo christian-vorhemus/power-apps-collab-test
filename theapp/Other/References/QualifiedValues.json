@@ -13,6 +13,13 @@
       "Values": {
         "Information": "cf939065-d3fd-44bc-9773-c85abf718b97"
       }
+    },
+    {
+      "Kind": "default.cds_new_bankaccount_forms",
+      "Namespace": "Bank Account (Forms)",
+      "Values": {
+        "Information": "d4a08d05-60aa-43d6-a1b1-fc10b883d4ce"
+      }
     }
   ]
 }
