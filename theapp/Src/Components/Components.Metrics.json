@@ -45,7 +45,7 @@
         "Name": "HtmlText1",
         "Parent": "Components.Metrics",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 150,
+        "PublishOrderIndex": 149,
         "Rules": [
           {
             "Category": "Data",
@@ -212,7 +212,7 @@
         "Name": "PowerBI1",
         "Parent": "Components.Metrics",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 151,
+        "PublishOrderIndex": 150,
         "Rules": [
           {
             "Category": "Data",
@@ -394,7 +394,7 @@
         "Name": "Label5",
         "Parent": "Components.Metrics",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 152,
+        "PublishOrderIndex": 151,
         "Rules": [
           {
             "Category": "Data",
@@ -725,7 +725,7 @@
         "Name": "Label6",
         "Parent": "Components.Metrics",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 153,
+        "PublishOrderIndex": 152,
         "Rules": [
           {
             "Category": "Data",
@@ -1019,7 +1019,7 @@
         "Name": "HtmlText1_1",
         "Parent": "Components.Metrics",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 154,
+        "PublishOrderIndex": 153,
         "Rules": [
           {
             "Category": "Data",
@@ -1177,11 +1177,11 @@
         "Name": "ColumnChart1",
         "Parent": "Components.Metrics",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 155,
+        "PublishOrderIndex": 154,
         "Rules": [
           {
             "Category": "Data",
-            "InvariantScript": "ForAll(GroupBy(ForAll(ShowColumns(Filter(HackathonSc1Tasks, TaskStatus = \"Inactive\", Year('Completed On') = Year(Now())), \"cr876_completedon\", \"createdon\"),\r\nWith({},\r\n     {WeekNumber:WeekNum(cr876_completedon),\r\n      MTR:DateDiff(createdon, cr876_completedon, \"Days\")\r\n     }\r\n   )\r\n), \"WeekNumber\", \"MTRs\" ),\r\nWith({},\r\n     {WeekNumber:WeekNumber,\r\n      MTR:Average(MTRs, MTR)\r\n     }\r\n   )\r\n)",
+            "InvariantScript": "ForAll(GroupBy(ForAll(ShowColumns(Filter(LoadtestTable, 'Task Status' = \"Inactive\", Year('Completed On') = Year(Now())), \"cr876_completedon\", \"createdon\"),\r\nWith({},\r\n     {WeekNumber:WeekNum(cr876_completedon),\r\n      MTR:DateDiff(createdon, cr876_completedon, \"Days\")\r\n     }\r\n   )\r\n), \"WeekNumber\", \"MTRs\" ),\r\nWith({},\r\n     {WeekNumber:WeekNumber,\r\n      MTR:Average(MTRs, MTR)\r\n     }\r\n   )\r\n)",
             "NameMap": "{\"Series1\":\"MTR\",\"Series2\":\"WeekNumber\",\"Series3\":\"WeekNumber\",\"Series4\":\"WeekNumber\",\"Series5\":\"WeekNumber\",\"Series6\":\"WeekNumber\",\"Series7\":\"WeekNumber\",\"Series8\":\"WeekNumber\",\"Series9\":\"WeekNumber\",\"Labels\":\"WeekNumber\"}",
             "Property": "Items",
             "RuleProviderType": "Unknown"
@@ -1390,7 +1390,7 @@
         "Name": "Label6_1",
         "Parent": "Components.Metrics",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 156,
+        "PublishOrderIndex": 155,
         "Rules": [
           {
             "Category": "Data",
@@ -1728,7 +1728,7 @@
         "Name": "Label5_1",
         "Parent": "Components.Metrics",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 157,
+        "PublishOrderIndex": 156,
         "Rules": [
           {
             "Category": "Data",
@@ -1738,7 +1738,7 @@
           },
           {
             "Category": "Data",
-            "InvariantScript": "Round(Average(Filter(HackathonSc1Tasks, TaskStatus = \"Inactive\"), DateDiff(createdon, cr876_completedon, \"Days\")), 2)",
+            "InvariantScript": "Round(Average(Filter(LoadtestTable, 'Task Status' = \"Inactive\"), DateDiff('Created On 2', 'Completed On', \"Days\")), 2)",
             "Property": "Text",
             "RuleProviderType": "Unknown"
           },
@@ -2029,7 +2029,7 @@
         "Name": "HtmlText1_2",
         "Parent": "Components.Metrics",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 158,
+        "PublishOrderIndex": 157,
         "Rules": [
           {
             "Category": "Data",
@@ -2202,7 +2202,7 @@
         "Name": "ColumnChart4",
         "Parent": "Components.Metrics",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 159,
+        "PublishOrderIndex": 158,
         "Rules": [
           {
             "Category": "Data",
@@ -2421,7 +2421,7 @@
         "Name": "Label6_2",
         "Parent": "Components.Metrics",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 160,
+        "PublishOrderIndex": 159,
         "Rules": [
           {
             "Category": "Data",
@@ -2759,7 +2759,7 @@
         "Name": "Label5_2",
         "Parent": "Components.Metrics",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 161,
+        "PublishOrderIndex": 160,
         "Rules": [
           {
             "Category": "Data",
@@ -3036,7 +3036,7 @@
       "ZIndex",
       "OnReset"
     ],
-    "LastModifiedTimestamp": "637905515370101114",
+    "LastModifiedTimestamp": "637905516486404623",
     "Name": "Components.Metrics",
     "Rules": [
       {
@@ -3101,7 +3101,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637905515370101114",
+  "LastModifiedTimestamp": "637905516486404623",
   "Name": "8c8f8dc79ac34241a13c1c0b61030b6a",
   "OverridableProperties": {},
   "Version": "637895891164101251"

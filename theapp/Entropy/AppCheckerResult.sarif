@@ -24,7 +24,7 @@
                 },
                 "region": {
                   "charLength": 20,
-                  "charOffset": 85,
+                  "charOffset": 84,
                   "snippet": {
                     "text": "Year('Completed On')"
                   }
@@ -64,7 +64,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 106,
+                  "charOffset": 105,
                   "snippet": {
                     "text": "="
                   }
@@ -103,10 +103,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 107,
+                  "charLength": 108,
                   "charOffset": 6,
                   "snippet": {
-                    "text": "Average(Filter(HackathonSc1Tasks, TaskStatus = \"Inactive\"), DateDiff(createdon, cr876_completedon, \"Days\"))"
+                    "text": "Average(Filter(LoadtestTable, 'Task Status' = \"Inactive\"), DateDiff('Created On 2', 'Completed On', \"Days\"))"
                   }
                 }
               },

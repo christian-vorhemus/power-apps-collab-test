@@ -73,7 +73,7 @@
         FontWeight: =FontWeight.Bold
         Height: =228
         Size: =82
-        Text: =Round(Average(Filter(HackathonSc1Tasks, TaskStatus = "Inactive"), DateDiff(createdon, cr876_completedon, "Days")), 2)
+        Text: =Round(Average(Filter(LoadtestTable, 'Task Status' = "Inactive"), DateDiff('Created On 2', 'Completed On', "Days")), 2)
         Width: =277
         X: =363
         Y: =418
@@ -82,7 +82,7 @@
     ColumnChart1 As barChart:
         Height: =317
         Items: |-
-            =ForAll(GroupBy(ForAll(ShowColumns(Filter(HackathonSc1Tasks, TaskStatus = "Inactive", Year('Completed On') = Year(Now())), "cr876_completedon", "createdon"),
+            =ForAll(GroupBy(ForAll(ShowColumns(Filter(LoadtestTable, 'Task Status' = "Inactive", Year('Completed On') = Year(Now())), "cr876_completedon", "createdon"),
             With({},
                  {WeekNumber:WeekNum(cr876_completedon),
                   MTR:DateDiff(createdon, cr876_completedon, "Days")
