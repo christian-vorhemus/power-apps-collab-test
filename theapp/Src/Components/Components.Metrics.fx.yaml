@@ -20,7 +20,7 @@
         FontWeight: =FontWeight.Bold
         Height: =228
         Size: =82
-        Text: =CountIf(HackathonSc1Tasks, TaskStatus = "Active")
+        Text: =CountIf(LoadtestTable, 'Task Status' = "Active")
         Width: =178
         X: =417
         Y: =87

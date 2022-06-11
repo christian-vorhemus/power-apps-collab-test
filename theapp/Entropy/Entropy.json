@@ -173,7 +173,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "06/10/2022 17:13:58",
+  "HeaderLastSavedDateTimeUTC": "06/11/2022 13:39:03",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "56e41a9e-2d17-4538-bff7-32aac8db650e": "\"/providers/microsoft.powerapps/apis/shared_office365/connections/shared-office365-6d856bfa-bacc-459e-8017-1a8ec70bf964\"",
@@ -187,8 +187,8 @@
     "MS-PowerPlatform_logo_stacked_c-white_rgb": "0002.png"
   },
   "LocalResourceRootPaths": {
-    "MS-PowerPlatform_logo_stacked_c-gray_rgb": "https://docserverpwaprodneu.blob.core.windows.net/0ab425d6-cc7d-4fa6-b3e1-9067012409ff-1/resource/Assets0Images00001.png?sv=2017-04-17&sr=b&sig=VCsI0cZA8wMM7Zk1Pxv%2FIS9PmZShUEiVyDsC9uxVnEg%3D&spr=https&se=2022-06-11T17%3A27%3A57Z&sp=r",
-    "MS-PowerPlatform_logo_stacked_c-white_rgb": "https://docserverpwaprodneu.blob.core.windows.net/0ab425d6-cc7d-4fa6-b3e1-9067012409ff-1/resource/Assets0Images00002.png?sv=2017-04-17&sr=b&sig=OfRFhhbyFIAP1NKHFC%2BAI5FdgPJrsESkR3dTcUAkrF8%3D&spr=https&se=2022-06-11T17%3A27%3A57Z&sp=r"
+    "MS-PowerPlatform_logo_stacked_c-gray_rgb": "https://docserverpwaprodweu.blob.core.windows.net/83ed3f32-4820-48de-a743-1b1c667e2902-1/resource/Assets0Images00001.png?sv=2017-04-17&sr=b&sig=gkZkOAibC1rZ02I%2F11jQiVafMQO5gGZvx8aJsKwrEZA%3D&spr=https&se=2022-06-12T13%3A53%3A22Z&sp=r",
+    "MS-PowerPlatform_logo_stacked_c-white_rgb": "https://docserverpwaprodweu.blob.core.windows.net/83ed3f32-4820-48de-a743-1b1c667e2902-1/resource/Assets0Images00002.png?sv=2017-04-17&sr=b&sig=IUMdXyEEJAAeiF0GZpZ8f6lzgXfmtESEGJsoMcLCM6s%3D&spr=https&se=2022-06-12T13%3A53%3A22Z&sp=r"
   },
   "OrderComponentMetadata": {
     "8c8f8dc79ac34241a13c1c0b61030b6a": 0
@@ -443,7 +443,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 1.4881411,
+    "AnalysisLoadTime": 1.8613109,
     "ControlCount": {
       "8c8f8dc79ac34241a13c1c0b61030b6a": 2,
       "addMedia": 2,
@@ -467,7 +467,7 @@
       "text": 15,
       "typedDataCard": 17
     },
-    "DeserializationLoadTime": 4.0196329,
+    "DeserializationLoadTime": 6.5218132,
     "ErrorCount": 31
   },
   "WasLocalDatabaseReferencesEmpty": false

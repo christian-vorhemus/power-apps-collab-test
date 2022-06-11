@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cr876_loadtesttable",
+    "MaxGetRowsCount": 500,
     "Name": "LoadtestTable",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",

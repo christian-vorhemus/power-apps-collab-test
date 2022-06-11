@@ -404,7 +404,7 @@
           },
           {
             "Category": "Data",
-            "InvariantScript": "CountIf(HackathonSc1Tasks, TaskStatus = \"Active\")",
+            "InvariantScript": "CountIf(LoadtestTable, 'Task Status' = \"Active\")",
             "Property": "Text",
             "RuleProviderType": "Unknown"
           },
@@ -3036,7 +3036,7 @@
       "ZIndex",
       "OnReset"
     ],
-    "LastModifiedTimestamp": "637904779788359384",
+    "LastModifiedTimestamp": "637905515370101114",
     "Name": "Components.Metrics",
     "Rules": [
       {
@@ -3101,7 +3101,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637904779788359384",
+  "LastModifiedTimestamp": "637905515370101114",
   "Name": "8c8f8dc79ac34241a13c1c0b61030b6a",
   "OverridableProperties": {},
   "Version": "637895891164101251"
