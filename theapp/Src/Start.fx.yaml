@@ -1201,7 +1201,7 @@ Start As screen:
             ZIndex: =5
 
     TextInput1 As text:
-        Default: =CountRows(LoadtestTable)
+        Default: =CountRows(HackathonSc1Tasks)
         Height: =70
         Size: =21
         Width: =560
