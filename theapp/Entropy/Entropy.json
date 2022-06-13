@@ -175,7 +175,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "06/13/2022 13:47:54",
+  "HeaderLastSavedDateTimeUTC": "06/13/2022 13:50:52",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "56e41a9e-2d17-4538-bff7-32aac8db650e": "\"/providers/microsoft.powerapps/apis/shared_office365/connections/shared-office365-6d856bfa-bacc-459e-8017-1a8ec70bf964\"",
@@ -463,7 +463,7 @@
       "group": 3,
       "htmlViewer": 3,
       "icon": 9,
-      "image": 6,
+      "image": 7,
       "label": 77,
       "powerbi": 1,
       "rectangle": 3,

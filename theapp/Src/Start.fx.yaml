@@ -1206,7 +1206,7 @@ Start As screen:
         Size: =21
         Width: =560
         X: =32
-        Y: =65
+        Y: =469
         ZIndex: =27
 
     Button5 As button:
@@ -1215,7 +1215,7 @@ Start As screen:
         Size: =24
         Text: ="Button"
         Width: =280
-        X: =32
-        Y: =141
+        X: =180
+        Y: =548
         ZIndex: =28
 
