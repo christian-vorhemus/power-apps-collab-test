@@ -20,10 +20,10 @@
         FontWeight: =FontWeight.Bold
         Height: =228
         Size: =82
-        Text: =CountIf(LoadtestTable, 'Task Status' = "Active")
-        Width: =178
-        X: =417
-        Y: =87
+        Text: =CountIf(LoadtestTable, 'Task Status' <> "Active2")
+        Width: =456
+        X: =67
+        Y: =306
         ZIndex: =2
 
     Label6 As label:
@@ -134,14 +134,4 @@
         Items: =WeekdayWork
         Y: =687
         ZIndex: =14
-
-    Label5_3 As label:
-        Align: =Align.Center
-        FontWeight: =FontWeight.Bold
-        Height: =228
-        Size: =82
-        Text: =CountIf(LoadtestTable, 'Task Status' <> "ABC")
-        Width: =409
-        Y: =724
-        ZIndex: =15
 
