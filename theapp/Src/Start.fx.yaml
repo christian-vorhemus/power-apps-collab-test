@@ -1200,3 +1200,12 @@ Start As screen:
             Y: =Parent.TemplateHeight - 1
             ZIndex: =5
 
+    TextInput1 As text:
+        Default: =CountRows(LoadtestTable)
+        Height: =70
+        Size: =21
+        Width: =560
+        X: =32
+        Y: =65
+        ZIndex: =27
+
