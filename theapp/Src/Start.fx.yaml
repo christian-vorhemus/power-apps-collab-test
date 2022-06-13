@@ -1201,11 +1201,21 @@ Start As screen:
             ZIndex: =5
 
     TextInput1 As text:
-        Default: =CountRows(HackathonSc1Tasks)
+        Default: =row
         Height: =70
         Size: =21
         Width: =560
         X: =32
         Y: =65
         ZIndex: =27
+
+    Button5 As button:
+        Height: =70
+        OnSelect: =Set(row, CountRows(LoadtestTable))
+        Size: =24
+        Text: ="Button"
+        Width: =280
+        X: =32
+        Y: =141
+        ZIndex: =28
 

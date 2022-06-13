@@ -24,6 +24,7 @@
     "Button2": 163,
     "Button3": 164,
     "Button4": 106,
+    "Button5": 169,
     "ChangeExistingTask": 16,
     "Checkbox5": 98,
     "ColumnChart1": 9,
@@ -174,7 +175,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "06/13/2022 13:19:36",
+  "HeaderLastSavedDateTimeUTC": "06/13/2022 13:47:54",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "56e41a9e-2d17-4538-bff7-32aac8db650e": "\"/providers/microsoft.powerapps/apis/shared_office365/connections/shared-office365-6d856bfa-bacc-459e-8017-1a8ec70bf964\"",
@@ -188,8 +189,8 @@
     "MS-PowerPlatform_logo_stacked_c-white_rgb": "0002.png"
   },
   "LocalResourceRootPaths": {
-    "MS-PowerPlatform_logo_stacked_c-gray_rgb": "https://docserverpwaprodweu.blob.core.windows.net/50896a89-13d4-4cf0-a60d-74e7183d783e-1/resource/Assets0Images00001.png?sv=2017-04-17&sr=b&sig=RNtjdtoL1eGlMTdNm6Kl%2BkLGmplHgy39ALKrE5%2B5Wss%3D&spr=https&se=2022-06-14T13%3A33%3A25Z&sp=r",
-    "MS-PowerPlatform_logo_stacked_c-white_rgb": "https://docserverpwaprodweu.blob.core.windows.net/50896a89-13d4-4cf0-a60d-74e7183d783e-1/resource/Assets0Images00002.png?sv=2017-04-17&sr=b&sig=phPorPKK9sphylsuGD5g6%2FQ3p7QnAEA%2BO%2F8dxKkKk5M%3D&spr=https&se=2022-06-14T13%3A33%3A25Z&sp=r"
+    "MS-PowerPlatform_logo_stacked_c-gray_rgb": "https://docserverpwaprodneu.blob.core.windows.net/ef0b1078-6fbf-4f74-bbca-511ef2a9f7dd-1/resource/Assets0Images00001.png?sv=2017-04-17&sr=b&sig=hF3lhH0uaRKw3Yg%2FLPnt1x3ETmKYR10Q02P8J90D7pU%3D&spr=https&se=2022-06-14T13%3A56%3A48Z&sp=r",
+    "MS-PowerPlatform_logo_stacked_c-white_rgb": "https://docserverpwaprodneu.blob.core.windows.net/ef0b1078-6fbf-4f74-bbca-511ef2a9f7dd-1/resource/Assets0Images00002.png?sv=2017-04-17&sr=b&sig=ZgfGPHsEuW3Qg%2FEntJD32ofgNePdZ8ys%2FqifDGl5n1k%3D&spr=https&se=2022-06-14T13%3A56%3A48Z&sp=r"
   },
   "OrderComponentMetadata": {
     "8c8f8dc79ac34241a13c1c0b61030b6a": 0
@@ -289,6 +290,7 @@
     "Button2": 95,
     "Button3": 96,
     "Button4": 38,
+    "Button5": 0,
     "ChangeExistingTask": 2,
     "Checkbox5": 30,
     "ColumnChart1": 155,
@@ -445,7 +447,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 1.6199971,
+    "AnalysisLoadTime": 1.7846664,
     "ControlCount": {
       "8c8f8dc79ac34241a13c1c0b61030b6a": 2,
       "addMedia": 2,
@@ -469,7 +471,7 @@
       "text": 16,
       "typedDataCard": 17
     },
-    "DeserializationLoadTime": 4.7361413,
+    "DeserializationLoadTime": 2.9497292,
     "ErrorCount": 31
   },
   "WasLocalDatabaseReferencesEmpty": false
