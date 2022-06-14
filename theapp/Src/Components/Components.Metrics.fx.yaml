@@ -20,10 +20,10 @@
         FontWeight: =FontWeight.Bold
         Height: =228
         Size: =82
-        Text: =CountIf(LoadtestTable, 'Task Status' <> "Active2")
+        Text: =CountIf(LoadtestTable, true)
         Width: =456
-        X: =67
-        Y: =306
+        X: =184
+        Y: =230
         ZIndex: =2
 
     Label6 As label:
@@ -54,7 +54,7 @@
             ="<div style='margin:10px;width:330px;height:310px;background-color:#;box-shadow:0 3px 6px 1px  #ccc; border-radius:5px'></div>"
         Width: =560
         X: =15
-        Y: =341
+        Y: =438
         ZIndex: =5
 
     Label6_1 As label:
