@@ -1253,10 +1253,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 108,
-                  "charOffset": 32,
+                  "charLength": 20,
+                  "charOffset": 110,
                   "snippet": {
-                    "text": "Average(Filter(LoadtestTable, 'Task Status' = \"Inactive\"), DateDiff('Created On 2', 'Completed On', \"Days\"))"
+                    "text": "Year('Completed On')"
                   }
                 }
               },
@@ -1269,7 +1269,47 @@
           ],
           "message": {
             "arguments": [
-              "Average"
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Start.Button5.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Start.Button5.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 131,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Start",
+                "type": "Start.Button5"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
             ],
             "id": "issue"
           },

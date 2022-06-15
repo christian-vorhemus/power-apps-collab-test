@@ -82,10 +82,10 @@
     ColumnChart1 As barChart:
         Height: =317
         Items: |-
-            =ForAll(GroupBy(ForAll(ShowColumns(Filter(LoadtestTable, 'Task Status' = "Inactive", Year('Completed On') = Year(Now())), "cr876_completedon", "createdon"),
+            =ForAll(GroupBy(ForAll(ShowColumns(Filter(LoadtestTable, 'Task Status' = "Inactive", Year('Completed On') = Year(Now())), "cr876_completedon", "cr876_createdon2"),
             With({},
                  {WeekNumber:WeekNum(cr876_completedon),
-                  MTR:DateDiff(createdon, cr876_completedon, "Days")
+                  MTR:DateDiff(cr876_createdon2, cr876_completedon, "Days")
                  }
                )
             ), "WeekNumber", "MTRs" ),

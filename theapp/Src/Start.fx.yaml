@@ -1214,7 +1214,19 @@ Start As screen:
         OnSelect: |-
             =Set(StartTime, Now());
             
-            Round(Average(Filter(LoadtestTable, 'Task Status' = "Inactive"), DateDiff('Created On 2', 'Completed On', "Days")), 2);
+            ForAll(GroupBy(ForAll(ShowColumns(Filter(LoadtestTable, 'Task Status' = "Inactive", Year('Completed On') = Year(Now())), "cr876_completedon", "cr876_createdon2"),
+            With({},
+                 {WeekNumber:WeekNum(cr876_completedon),
+                  MTR:DateDiff(cr876_createdon2, cr876_completedon, "Days")
+                 }
+               )
+            ), "WeekNumber", "MTRs" ),
+            With({},
+                 {WeekNumber:WeekNumber,
+                  MTR:Average(MTRs, MTR)
+                 }
+               )
+            );
             
             Set(EndTime, Now());
             Set(Duration, DateDiff(StartTime, EndTime, "Milliseconds"));

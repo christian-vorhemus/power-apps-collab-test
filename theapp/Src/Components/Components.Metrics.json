@@ -1025,7 +1025,7 @@
         "Rules": [
           {
             "Category": "Data",
-            "InvariantScript": "ForAll(GroupBy(ForAll(ShowColumns(Filter(LoadtestTable, 'Task Status' = \"Inactive\", Year('Completed On') = Year(Now())), \"cr876_completedon\", \"createdon\"),\r\nWith({},\r\n     {WeekNumber:WeekNum(cr876_completedon),\r\n      MTR:DateDiff(createdon, cr876_completedon, \"Days\")\r\n     }\r\n   )\r\n), \"WeekNumber\", \"MTRs\" ),\r\nWith({},\r\n     {WeekNumber:WeekNumber,\r\n      MTR:Average(MTRs, MTR)\r\n     }\r\n   )\r\n)",
+            "InvariantScript": "ForAll(GroupBy(ForAll(ShowColumns(Filter(LoadtestTable, 'Task Status' = \"Inactive\", Year('Completed On') = Year(Now())), \"cr876_completedon\", \"cr876_createdon2\"),\r\nWith({},\r\n     {WeekNumber:WeekNum(cr876_completedon),\r\n      MTR:DateDiff(cr876_createdon2, cr876_completedon, \"Days\")\r\n     }\r\n   )\r\n), \"WeekNumber\", \"MTRs\" ),\r\nWith({},\r\n     {WeekNumber:WeekNumber,\r\n      MTR:Average(MTRs, MTR)\r\n     }\r\n   )\r\n)",
             "NameMap": "{\"Series1\":\"MTR\",\"Series2\":\"WeekNumber\",\"Series3\":\"WeekNumber\",\"Series4\":\"WeekNumber\",\"Series5\":\"WeekNumber\",\"Series6\":\"WeekNumber\",\"Series7\":\"WeekNumber\",\"Series8\":\"WeekNumber\",\"Series9\":\"WeekNumber\",\"Labels\":\"WeekNumber\"}",
             "Property": "Items",
             "RuleProviderType": "Unknown"
@@ -3036,7 +3036,7 @@
       "ZIndex",
       "OnReset"
     ],
-    "LastModifiedTimestamp": "637908774064761483",
+    "LastModifiedTimestamp": "637908788487133791",
     "Name": "Components.Metrics",
     "Rules": [
       {
@@ -3101,7 +3101,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637908774064761483",
+  "LastModifiedTimestamp": "637908788487133791",
   "Name": "8c8f8dc79ac34241a13c1c0b61030b6a",
   "OverridableProperties": {},
   "Version": "637895891164101251"
