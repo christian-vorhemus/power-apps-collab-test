@@ -1244,6 +1244,46 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Start.Button5.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Start.Button5.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 108,
+                  "charOffset": 32,
+                  "snippet": {
+                    "text": "Average(Filter(LoadtestTable, 'Task Status' = \"Inactive\"), DateDiff('Created On 2', 'Completed On', \"Days\"))"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Start",
+                "type": "Start.Button5"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Average"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Components.Metrics'.ColumnChart1.AccessibleLabel"
                 }
               ],

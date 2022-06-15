@@ -27,7 +27,7 @@
     "Button5": 161,
     "ChangeExistingTask": 16,
     "Checkbox5": 97,
-    "ColumnChart1": 9,
+    "ColumnChart1": 8,
     "ColumnChart4": 13,
     "Components.Metrics": 3,
     "Components.Metrics_1": 69,
@@ -95,7 +95,7 @@
     "Header_1": 17,
     "Header_2": 66,
     "HtmlText1": 4,
-    "HtmlText1_1": 8,
+    "HtmlText1_1": 11,
     "HtmlText1_2": 12,
     "Icon1": 163,
     "Icon2": 68,
@@ -116,10 +116,10 @@
     "Label3": 75,
     "Label4": 157,
     "Label5": 7,
-    "Label5_1": 11,
+    "Label5_1": 10,
     "Label5_2": 15,
     "Label6": 6,
-    "Label6_1": 10,
+    "Label6_1": 9,
     "Label6_2": 14,
     "Logo": 72,
     "Logo_1": 18,
@@ -175,7 +175,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "06/14/2022 06:38:49",
+  "HeaderLastSavedDateTimeUTC": "06/15/2022 08:22:40",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "56e41a9e-2d17-4538-bff7-32aac8db650e": "\"/providers/microsoft.powerapps/apis/shared_office365/connections/shared-office365-6d856bfa-bacc-459e-8017-1a8ec70bf964\"",
@@ -189,8 +189,8 @@
     "MS-PowerPlatform_logo_stacked_c-white_rgb": "0002.png"
   },
   "LocalResourceRootPaths": {
-    "MS-PowerPlatform_logo_stacked_c-gray_rgb": "https://docserverpwaprodneu.blob.core.windows.net/324fe1bd-887b-4e9d-a30b-012480c0d374-1/resource/Assets0Images00001.png?sv=2017-04-17&sr=b&sig=OWSnAi%2F%2BiSFPUA3iusr8UzV1wIYU3aCIn%2FPb4yBWbwU%3D&spr=https&se=2022-06-15T05%3A16%3A41Z&sp=r",
-    "MS-PowerPlatform_logo_stacked_c-white_rgb": "https://docserverpwaprodneu.blob.core.windows.net/324fe1bd-887b-4e9d-a30b-012480c0d374-1/resource/Assets0Images00002.png?sv=2017-04-17&sr=b&sig=H%2FiD5ljLIuFyNn4VwMycZ1YuFEg0ihtWD7KC8xtiN1c%3D&spr=https&se=2022-06-15T05%3A16%3A41Z&sp=r"
+    "MS-PowerPlatform_logo_stacked_c-gray_rgb": "https://docserverpwaprodweu.blob.core.windows.net/5f595fd4-89f0-413e-9f6a-18b71c696524-1/resource/Assets0Images00001.png?sv=2017-04-17&sr=b&sig=KBv0xJljALKuYdih0%2BjhicAbpeKGkO8GaGw3Gzemv9A%3D&spr=https&se=2022-06-16T07%3A39%3A31Z&sp=r",
+    "MS-PowerPlatform_logo_stacked_c-white_rgb": "https://docserverpwaprodweu.blob.core.windows.net/5f595fd4-89f0-413e-9f6a-18b71c696524-1/resource/Assets0Images00002.png?sv=2017-04-17&sr=b&sig=ZXMOohmuLUKxCPqIXCc8RjvqVI0bneTPwN77YMsxTE8%3D&spr=https&se=2022-06-16T07%3A39%3A31Z&sp=r"
   },
   "OrderComponentMetadata": {
     "8c8f8dc79ac34241a13c1c0b61030b6a": 0
@@ -447,7 +447,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 1.6189484,
+    "AnalysisLoadTime": 1.7196018,
     "ControlCount": {
       "8c8f8dc79ac34241a13c1c0b61030b6a": 2,
       "addMedia": 2,
@@ -471,8 +471,8 @@
       "text": 16,
       "typedDataCard": 17
     },
-    "DeserializationLoadTime": 2.8223679,
-    "ErrorCount": 31
+    "DeserializationLoadTime": 4.354532,
+    "ErrorCount": 32
   },
   "WasLocalDatabaseReferencesEmpty": false
 }

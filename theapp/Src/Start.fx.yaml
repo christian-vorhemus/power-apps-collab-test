@@ -1201,7 +1201,7 @@ Start As screen:
             ZIndex: =5
 
     TextInput1 As text:
-        Default: =row
+        Default: =Duration
         Height: =70
         Size: =21
         Width: =560
@@ -1211,7 +1211,13 @@ Start As screen:
 
     Button5 As button:
         Height: =70
-        OnSelect: =Set(row, CountRows(LoadtestTable))
+        OnSelect: |-
+            =Set(StartTime, Now());
+            
+            Round(Average(Filter(LoadtestTable, 'Task Status' = "Inactive"), DateDiff('Created On 2', 'Completed On', "Days")), 2);
+            
+            Set(EndTime, Now());
+            Set(Duration, DateDiff(StartTime, EndTime, "Milliseconds"));
         Size: =24
         Text: ="Button"
         Width: =280

@@ -20,7 +20,7 @@
         FontWeight: =FontWeight.Bold
         Height: =228
         Size: =82
-        Text: =CountIf(LoadtestTable, true)
+        Text: =CountRows(LoadtestTable)
         Width: =456
         X: =184
         Y: =230
